@@ -1,0 +1,54 @@
+﻿<p>
+  <b>Nom:</b>
+  <%=h @user.nom %>
+</p>
+
+<p>
+  <b>Prenom:</b>
+  <%=h @user.prenom %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @user.email %>
+</p>
+
+<p>
+  <b>Date naissance:</b>
+  <%=h @user.date_naissance %>
+</p>
+
+<h2>Commentaires</h2> 
+<% @user.comments.each do |c| %>  
+	<p>  
+		<b>Utilisateur :</b>  
+		<%=h c.commenter %>  
+	</p>  
+	<p>  
+		<b>Commentaire :</b>  
+		<%=h c.body %>  
+	</p>
+	<p>
+		---------------------------------
+	</p>
+<% end %> 
+
+<!--<p>
+  <b>Date inscription:</b>
+  <%=h @user.date_inscription %>
+</p>
+
+<p>
+  <b>Last connect:</b>
+  <%=h @user.last_connect %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @user.status %>
+</p>-->
+
+
+<%= link_to 'Modifier', edit_user_path(@user) %> |
+<%= link_to 'Retour', users_path %> | 
+<%= link_to 'Gérer les commentaires', user_comments_path(@user) %> 

@@ -1,0 +1,36 @@
+<% form_for(@user) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :nom %><br />
+    <%= f.text_field :nom %>
+  </p>
+  <p>
+    <%= f.label :prenom %><br />
+    <%= f.text_field :prenom %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :date_naissance %><br />
+    <%= f.date_select :date_naissance %>
+  </p>
+  <!--<p>
+    <%= f.label :date_inscription %><br />
+    <%= f.datetime_select :date_inscription %>
+  </p>
+  <p>
+    <%= f.label :last_connect %><br />
+    <%= f.datetime_select :last_connect %>
+  </p>
+  <p>
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </p>-->
+  <p>
+    <%= f.submit 'Enregistrer' %>
+  </p>
+  
+<% end %> 

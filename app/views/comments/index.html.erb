@@ -1,0 +1,20 @@
+﻿<h1>Commentaires de l'utilisateur <%= @user.prenom %> <%= @user.nom %></h1> 
+<table border="1">  
+	<tr>
+		<th>Utilisateur</th>  
+		<th>Commentaire</th>
+		<th colspan="3">Actions</th>
+	</tr> 
+	<% for comment in @comments %>  
+		<tr>  
+			<td><%=h comment.commenter %></td>  
+			<td><%=h comment.body %></td>  
+			<td><%= link_to 'Voir', user_comment_path(@user, comment) %></td>  
+			<td><%= link_to 'Modifier', edit_user_comment_path(@user, comment) %></td>  
+			<td><%= link_to 'Supprimer', user_comment_path(@user, comment), :confirm => 'Etes vous sur ?', :method => :delete %></td>
+		</tr> 
+	<% end %> 
+</table> 
+<br /> 
+<%= link_to 'Nouveau commentaire', new_user_comment_path(@user) %> 
+<%= link_to 'Retourner à l\'utilisateur', @user %> 

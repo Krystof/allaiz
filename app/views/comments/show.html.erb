@@ -1,0 +1,12 @@
+<h1>Commentaires associes a <%= @user.prenom %> <%= @user.nom %></h1> 
+<p>  
+	<b>Utilisateur :</b>  
+	<%=h @comment.commenter %> 
+</p> 
+
+<p>  
+	<b>Commentaire :</b>  
+	<%=h @comment.body %> 
+</p> 
+<%= link_to 'Modifier', edit_user_comment_path(@user, @comment) %> | 
+<%= link_to 'Retour', user_comments_path(@user) %> 

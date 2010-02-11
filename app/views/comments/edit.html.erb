@@ -1,0 +1,19 @@
+<h1>Editer commentaire</h1> 
+<% form_for([@user, @comment]) do |f| %>  
+	<%= f.error_messages %>  
+	<p>  
+		<%= f.label :Utilisateur %><br />  
+		<%= f.text_field :commenter %>  
+	</p>  
+	
+	<p>  
+		<%= f.label :Commentaire %><br />  
+		<%= f.text_area :body %>  
+	</p>  
+	
+	<p>  
+		<%= f.submit "Modifier" %>  
+	</p> 
+<% end %> 
+<%= link_to 'Voir ce commentaire', user_comment_path(@user, @comment) %> | 
+<%= link_to 'Retour aux commentaires', user_comments_path(@user) %> 

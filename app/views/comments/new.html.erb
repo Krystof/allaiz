@@ -1,0 +1,18 @@
+﻿<h1>Nouveau commentaire</h1> 
+<% form_for([@user, @comment]) do |f| %>  
+	<%= f.error_messages %>  
+	<p>  
+		<%= f.label :Utilisateur %><br />  
+		<%= f.text_field :commenter %>  
+	</p>  
+	
+	<p>  
+		<%= f.label :Commentaire %><br />  
+		<%= f.text_area :body %>  
+	</p>  
+	
+	<p>  
+		<%= f.submit "Créer" %>  
+	</p> 
+<% end %> 
+<%= link_to 'Retour', user_comments_path(@user) %> 
