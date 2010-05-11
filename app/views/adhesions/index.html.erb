@@ -1,0 +1,14 @@
+<h1>Liste des groupes</h1>
+
+<ul>
+	<% @groups.each do |g| %>
+	<li><%= g.name %></li>
+	<h2>Les utilisateurs de ce groupe</h2>
+	<ul>
+		<% g.users.each do |gu| %>
+		<li>Nom : <%= gu.nom %>, Email : <%= mail_to gu.email, 'Lui ecrire' %></li>
+		<% end %>
+	</ul>
+	<% end %>
+</ul>
+

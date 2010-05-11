@@ -1,4 +1,12 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :adhesions
+
+  map.resources :groups
+
+  map.resources :groups
+
+  map.resources :groups
+
   
   map.resources :users
   map.resources :users, :has_many => :comments 

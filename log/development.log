@@ -7267,3 +7267,2246 @@ Rendering template within layouts/users
 Rendering users/index
   [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
 Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (93.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (31.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-02-11 18:09:13) [GET]
+Rendering home/index
+Completed in 250ms (View: 250, DB: 125) | 200 OK [http://localhost/]
+  [4;36;1mSQL (93.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-04-13 15:29:09) [GET]
+Rendering home/index
+Completed in 172ms (View: 172, DB: 109) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-13 15:29:14) [GET]
+  [4;36;1mUser Load (78.1ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 2719ms (View: 2500, DB: 94) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-13 15:29:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (15.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+  [4;36;1mComment Load (78.1ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.user_id = 1) [0m
+  [4;35;1mComment Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 203ms (View: 94, DB: 109) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100210205951)
+Migrating to CreateUsers (20100210211708)
+Migrating to CreateComments (20100211094107)
+Migrating to CreateGroups (20100413133315)
+  [4;36;1mSQL (78.1ms)[0m   [0;1mCREATE TABLE `groups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `date_created` date, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (62.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100413133315')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `groups`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `groups`[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mSHOW KEYS FROM `groups`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100210205951)
+Migrating to CreateUsers (20100210211708)
+Migrating to CreateComments (20100211094107)
+Migrating to CreateGroups (20100413133315)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `groups`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `groups`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `groups`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100210205951)
+Migrating to CreateUsers (20100210211708)
+Migrating to CreateComments (20100211094107)
+Migrating to CreateGroups (20100413133315)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100210205951)
+Migrating to CreateUsers (20100210211708)
+Migrating to CreateComments (20100211094107)
+Migrating to CreateGroups (20100413133315)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100210205951)
+Migrating to CreateUsers (20100210211708)
+Migrating to CreateComments (20100211094107)
+Migrating to CreateGroups (20100413134209)
+  [4;36;1mSQL (93.8ms)[0m   [0;1mCREATE TABLE `groups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (46.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100413134209')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mSHOW FIELDS FROM `groups`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `groups`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `groups`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100210205951)
+Migrating to CreateUsers (20100210211708)
+Migrating to CreateComments (20100211094107)
+Migrating to CreateGroups (20100413134409)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Table 'groups' already exists: CREATE TABLE `groups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100210205951)
+Migrating to CreateUsers (20100210211708)
+Migrating to CreateComments (20100211094107)
+Migrating to CreateGroups (20100413134409)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Table 'groups' already exists: CREATE TABLE `groups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `groups`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `groups`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `groups`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100210205951)
+Migrating to CreateUsers (20100210211708)
+Migrating to CreateComments (20100211094107)
+Migrating to CreateGroups (20100413134409)
+  [4;35;1mSQL (0.0ms)[0m   [0mMysql::Error: Table 'groups' already exists: CREATE TABLE `groups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `test` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateGroups (20100413134209)
+  [4;36;1mSQL (93.8ms)[0m   [0;1mDROP TABLE `groups`[0m
+  [4;35;1mSQL (93.8ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20100413134209'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100210205951)
+Migrating to CreateUsers (20100210211708)
+Migrating to CreateComments (20100211094107)
+Migrating to CreateGroups (20100413134209)
+  [4;36;1mSQL (109.4ms)[0m   [0;1mCREATE TABLE `groups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `test` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (46.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100413134209')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `groups`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `groups`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `groups`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateGroups (20100413134209)
+  [4;36;1mSQL (31.2ms)[0m   [0;1mDROP TABLE `groups`[0m
+  [4;35;1mSQL (46.9ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20100413134209'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100210205951)
+Migrating to CreateUsers (20100210211708)
+Migrating to CreateComments (20100211094107)
+Migrating to CreateGroups (20100413134209)
+  [4;36;1mSQL (109.4ms)[0m   [0;1mCREATE TABLE `groups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `test` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mGroup Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `groups`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mGroup Create (0.0ms)[0m   [0mINSERT INTO `groups` (`name`, `description`, `test`, `user_id`, `created_at`, `updated_at`) VALUES('Groupe de David', NULL, NULL, NULL, '2010-04-13 14:00:04', '2010-04-13 14:00:04')[0m
+  [4;36;1mSQL (62.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (46.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100413134209')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mSHOW FIELDS FROM `groups`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `groups`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `groups`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mGroup Load (0.0ms)[0m   [0;1mSELECT * FROM `groups` LIMIT 1[0m
+  [4;35;1mGroup Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `groups`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-13 16:03:48) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendering template within layouts/users
+Rendering users/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.user_id = 3) [0m
+  [4;35;1mComment Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 312ms (View: 219, DB: 0) | 200 OK [http://localhost/users/3]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#index (for 127.0.0.1 at 2010-04-13 16:03:55) [GET]
+  Parameters: {"user_id"=>"3"}
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendering comments/index
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.user_id = 3) [0m
+  [4;35;1mComment Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/users/3/comments]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100210205951)
+Migrating to CreateUsers (20100210211708)
+Migrating to CreateComments (20100211094107)
+Migrating to CreateGroups (20100413134209)
+Migrating to CreateAdhesions (20100413141055)
+  [4;36;1mSQL (93.8ms)[0m   [0;1mCREATE TABLE `adhesions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `group_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (62.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100413141055')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `adhesions`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `adhesions`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `adhesions`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `comments`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `comments`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `groups`[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mdescribe `groups`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `groups`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-04-13 16:15:24) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 750ms (View: 562, DB: 0) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdhesionsController#index (for 127.0.0.1 at 2010-04-13 16:15:30) [GET]
+  [4;36;1mAdhesion Load (0.0ms)[0m   [0;1mSELECT * FROM `adhesions` [0m
+Rendering template within layouts/adhesions
+Rendering adhesions/index
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/adhesions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mGroup Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `groups`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mGroup Create (0.0ms)[0m   [0;1mINSERT INTO `groups` (`name`, `description`, `test`, `user_id`, `created_at`, `updated_at`) VALUES('Groupe cin‚ma', NULL, NULL, NULL, '2010-04-13 14:21:33', '2010-04-13 14:21:33')[0m
+  [4;35;1mSQL (140.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mGroup Delete all (140.6ms)[0m   [0;1mDELETE FROM `groups` WHERE (`id` IN (2)) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mGroup Create (0.0ms)[0m   [0;1mINSERT INTO `groups` (`name`, `description`, `test`, `user_id`, `created_at`, `updated_at`) VALUES('Groupe cinema', NULL, NULL, NULL, '2010-04-13 14:22:18', '2010-04-13 14:22:18')[0m
+  [4;35;1mSQL (203.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO `users` (`nom`, `prenom`, `email`, `date_naissance`, `date_inscription`, `last_connect`, `status`, `created_at`, `updated_at`) VALUES('CHOCHO', 'Christophe', 'krystof@hotmail.com', NULL, NULL, NULL, NULL, '2010-04-13 14:23:13', '2010-04-13 14:23:13')[0m
+  [4;35;1mSQL (62.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mGroup Load (0.0ms)[0m   [0;1mSELECT * FROM `groups` LIMIT 1[0m
+  [4;35;1mGroup Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `groups`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mGroup Load (0.0ms)[0m   [0;1mSELECT * FROM `groups` [0m
+  [4;35;1mGroup Load (0.0ms)[0m   [0mSELECT * FROM `groups` ORDER BY groups.id DESC LIMIT 1[0m
+  [4;36;1mGroup Load (0.0ms)[0m   [0;1mSELECT * FROM `groups` ORDER BY groups.id DESC LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` ORDER BY users.id DESC LIMIT 1[0m
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mGroup Load (0.0ms)[0m   [0;1mSELECT * FROM `groups` ORDER BY groups.id DESC LIMIT 1[0m
+  [4;35;1mGroup Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `groups`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` ORDER BY users.id DESC LIMIT 1[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mGroup Load (0.0ms)[0m   [0;1mSELECT * FROM `groups` ORDER BY groups.id DESC LIMIT 1[0m
+  [4;35;1mGroup Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `groups`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` ORDER BY users.id DESC LIMIT 1[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAdhesion Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `adhesions`[0m
+  [4;36;1mAdhesion Create (0.0ms)[0m   [0;1mINSERT INTO `adhesions` (`user_id`, `group_id`, `created_at`, `updated_at`) VALUES(4, 3, '2010-04-13 14:34:24', '2010-04-13 14:34:24')[0m
+  [4;35;1mSQL (62.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.* FROM `users` INNER JOIN `adhesions` ON `users`.id = `adhesions`.user_id WHERE ((`adhesions`.group_id = 3)) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-13 16:35:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+  [4;36;1mComment Load (0.0ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.user_id = 1) [0m
+  [4;35;1mComment Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Completed in 734ms (View: 609, DB: 0) | 200 OK [http://localhost/users/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdhesionsController#index (for 127.0.0.1 at 2010-04-13 16:35:31) [GET]
+  [4;36;1mAdhesion Load (0.0ms)[0m   [0;1mSELECT * FROM `adhesions` [0m
+Rendering template within layouts/adhesions
+Rendering adhesions/index
+  [4;35;1mAdhesion Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `adhesions`[0m
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/adhesions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdhesionsController#show (for 127.0.0.1 at 2010-04-13 16:35:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAdhesion Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `adhesions`[0m
+  [4;35;1mAdhesion Load (0.0ms)[0m   [0mSELECT * FROM `adhesions` WHERE (`adhesions`.`id` = 1) [0m
+Rendering template within layouts/adhesions
+Rendering adhesions/show
+Completed in 47ms (View: 31, DB: 16) | 200 OK [http://localhost/adhesions/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdhesionsController#show (for 127.0.0.1 at 2010-04-13 16:35:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAdhesion Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `adhesions`[0m
+  [4;35;1mAdhesion Load (0.0ms)[0m   [0mSELECT * FROM `adhesions` WHERE (`adhesions`.`id` = 1) [0m
+Rendering template within layouts/adhesions
+Rendering adhesions/show
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/adhesions/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdhesionsController#index (for 127.0.0.1 at 2010-04-13 16:36:02) [GET]
+  [4;36;1mAdhesion Load (0.0ms)[0m   [0;1mSELECT * FROM `adhesions` [0m
+Rendering template within layouts/adhesions
+Rendering adhesions/index
+  [4;35;1mAdhesion Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `adhesions`[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/adhesions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdhesionsController#index (for 127.0.0.1 at 2010-04-13 16:36:35) [GET]
+  [4;36;1mAdhesion Load (0.0ms)[0m   [0;1mSELECT * FROM `adhesions` [0m
+Rendering template within layouts/adhesions
+Rendering adhesions/index
+  [4;35;1mAdhesion Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `adhesions`[0m
+Completed in 78ms (View: 62, DB: 16) | 200 OK [http://localhost/adhesions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdhesionsController#show (for 127.0.0.1 at 2010-04-13 16:36:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAdhesion Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `adhesions`[0m
+  [4;35;1mAdhesion Load (0.0ms)[0m   [0mSELECT * FROM `adhesions` WHERE (`adhesions`.`id` = 1) [0m
+Rendering template within layouts/adhesions
+Rendering adhesions/show
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/adhesions/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdhesionsController#index (for 127.0.0.1 at 2010-04-13 16:36:52) [GET]
+  [4;36;1mAdhesion Load (15.6ms)[0m   [0;1mSELECT * FROM `adhesions` [0m
+Rendering template within layouts/adhesions
+Rendering adhesions/index
+  [4;35;1mAdhesion Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `adhesions`[0m
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/adhesions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdhesionsController#index (for 127.0.0.1 at 2010-04-13 16:37:01) [GET]
+  [4;36;1mAdhesion Load (0.0ms)[0m   [0;1mSELECT * FROM `adhesions` [0m
+Rendering template within layouts/adhesions
+Rendering adhesions/index
+  [4;35;1mAdhesion Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `adhesions`[0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/adhesions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdhesionsController#index (for 127.0.0.1 at 2010-04-13 16:41:38) [GET]
+  [4;36;1mAdhesion Load (0.0ms)[0m   [0;1mSELECT * FROM `adhesions` [0m
+Rendering template within layouts/adhesions
+Rendering adhesions/index
+  [4;35;1mAdhesion Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `adhesions`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/adhesions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdhesionsController#show (for 127.0.0.1 at 2010-04-13 16:41:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAdhesion Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `adhesions`[0m
+  [4;35;1mAdhesion Load (0.0ms)[0m   [0mSELECT * FROM `adhesions` WHERE (`adhesions`.`id` = 1) [0m
+Rendering template within layouts/adhesions
+Rendering adhesions/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #3 of app/views/adhesions/show.html.erb:
+1: <p>
+2:   <b>Nom du groupe :</b>
+3:   <%=h @group.name %>
+4: </p>
+5: 
+6: <p>
+
+    app/views/adhesions/show.html.erb:3
+    app/controllers/adhesions_controller.rb:18:in `show'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (500.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-13 16:44:55) [GET]
+
+ActionController::RoutingError (No route matches "/bidules" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BidulesController#index (for 127.0.0.1 at 2010-04-13 16:45:22) [GET]
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/bidules]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BidulesController#index (for 127.0.0.1 at 2010-04-13 16:47:49) [GET]
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/bidules]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BidulesController#index (for 127.0.0.1 at 2010-04-13 16:47:52) [GET]
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/bidules]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BidulesController#index (for 127.0.0.1 at 2010-04-13 16:48:01) [GET]
+Rendering bidules/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/bidules]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BidulesController#index (for 127.0.0.1 at 2010-04-13 16:48:25) [GET]
+Rendering bidules/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/bidules]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BidulesController#index (for 127.0.0.1 at 2010-04-13 16:48:36) [GET]
+Rendering bidules/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/bidules]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BidulesController#index (for 127.0.0.1 at 2010-04-13 16:49:18) [GET]
+Rendering bidules/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/bidules]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BidulesController#index (for 127.0.0.1 at 2010-04-13 16:49:29) [GET]
+Rendering bidules/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/bidules]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BidulesController#index (for 127.0.0.1 at 2010-04-13 16:50:11) [GET]
+Rendering bidules/index
+  [4;36;1mGroup Load (0.0ms)[0m   [0;1mSELECT * FROM `groups` LIMIT 1[0m
+  [4;35;1mGroup Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `groups`[0m
+Completed in 312ms (View: 312, DB: 0) | 200 OK [http://localhost/bidules]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing BidulesController#index (for 127.0.0.1 at 2010-04-13 16:51:42) [GET]
+  [4;36;1mGroup Load (15.6ms)[0m   [0;1mSELECT * FROM `groups` LIMIT 1[0m
+Rendering bidules/index
+  [4;35;1mGroup Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `groups`[0m
+Completed in 94ms (View: 78, DB: 16) | 200 OK [http://localhost/bidules]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mGroup Load (0.0ms)[0m   [0;1mSELECT * FROM `groups` LIMIT 1[0m
+  [4;35;1mGroup Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `groups`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.* FROM `users` INNER JOIN `adhesions` ON `users`.id = `adhesions`.user_id WHERE ((`adhesions`.group_id = 1)) [0m
+  [4;35;1mGroup Load (0.0ms)[0m   [0mSELECT * FROM `groups` LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` LIMIT 1[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mGroup Load (0.0ms)[0m   [0;1mSELECT * FROM `groups` ORDER BY groups.id DESC LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.* FROM `users` INNER JOIN `adhesions` ON `users`.id = `adhesions`.user_id WHERE ((`adhesions`.group_id = 3)) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdhesionsController#index (for 127.0.0.1 at 2010-04-13 17:01:50) [GET]
+  [4;36;1mGroup Load (0.0ms)[0m   [0;1mSELECT * FROM `groups` [0m
+Rendering template within layouts/adhesions
+Rendering adhesions/index
+  [4;35;1mGroup Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `groups`[0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/adhesions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdhesionsController#index (for 127.0.0.1 at 2010-04-13 17:05:55) [GET]
+  [4;36;1mGroup Load (0.0ms)[0m   [0;1mSELECT * FROM `groups` [0m
+Rendering template within layouts/adhesions
+Rendering adhesions/index
+ERROR: compiling _run_erb_app47views47adhesions47index46html46erb RAISED C:/wamp/www/rails/allaiz/app/views/adhesions/index.html.erb:9: syntax error, unexpected '<'
+...ail_to gu.email, 'Lui écrire'><%= gu.email ).to_s); @output_...
+...                               ^
+C:/wamp/www/rails/allaiz/app/views/adhesions/index.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+Function body:           def _run_erb_app47views47adhesions47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Liste des groupes</h1>\n\n<ul>\n\t"
+
+
+;  @groups.each do |g| ; @output_buffer.concat "\n\t<li>"
+; @output_buffer.concat(( g.name ).to_s); @output_buffer.concat "</li>\n\t<h2>Les utilisateurs de ce groupe</h2>\n\t<ul>\n\t\t"
+
+
+;  @g.users.each do |gu| ; @output_buffer.concat "\n\t\t<li>Nom : "
+; @output_buffer.concat(( gu.nom ).to_s); @output_buffer.concat ", Email : "; @output_buffer.concat(( mail_to gu.email, 'Lui écrire'><%= gu.email ).to_s); @output_buffer.concat "</li>\n\t\t"
+;  end ; @output_buffer.concat "\n\t</ul>\n\t"
+
+;  end ; @output_buffer.concat "\n</ul>\n\n"
+
+
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `module_eval'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `compile!'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action_with_flash'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process_with_filters'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `block in call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:8:in `synchronize'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-13 17:05:55) [GET]
+
+Encoding::CompatibilityError (incompatible character encodings: ASCII-8BIT and CP850):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (78.1ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdhesionsController#index (for 127.0.0.1 at 2010-04-13 17:06:04) [GET]
+  [4;35;1mGroup Load (0.0ms)[0m   [0mSELECT * FROM `groups` [0m
+Rendering template within layouts/adhesions
+Rendering adhesions/index
+ERROR: compiling _run_erb_app47views47adhesions47index46html46erb RAISED C:/wamp/www/rails/allaiz/app/views/adhesions/index.html.erb:9: syntax error, unexpected '<'
+...ail_to gu.email, 'Lui ecrire'><%= gu.email ).to_s); @output_...
+...                               ^
+C:/wamp/www/rails/allaiz/app/views/adhesions/index.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+Function body:           def _run_erb_app47views47adhesions47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<h1>Liste des groupes</h1>\n\n<ul>\n\t"
+
+
+;  @groups.each do |g| ; @output_buffer.concat "\n\t<li>"
+; @output_buffer.concat(( g.name ).to_s); @output_buffer.concat "</li>\n\t<h2>Les utilisateurs de ce groupe</h2>\n\t<ul>\n\t\t"
+
+
+;  @g.users.each do |gu| ; @output_buffer.concat "\n\t\t<li>Nom : "
+; @output_buffer.concat(( gu.nom ).to_s); @output_buffer.concat ", Email : "; @output_buffer.concat(( mail_to gu.email, 'Lui ecrire'><%= gu.email ).to_s); @output_buffer.concat "</li>\n\t\t"
+;  end ; @output_buffer.concat "\n\t</ul>\n\t"
+
+;  end ; @output_buffer.concat "\n</ul>\n\n"
+
+
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `module_eval'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `compile!'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action_with_flash'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process_with_filters'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `block in call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:8:in `synchronize'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+ActionView::TemplateError (C:/wamp/www/rails/allaiz/app/views/adhesions/index.html.erb:9: syntax error, unexpected '<'
+...ail_to gu.email, 'Lui ecrire'><%= gu.email ).to_s); @output_...
+...                               ^
+C:/wamp/www/rails/allaiz/app/views/adhesions/index.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')') on line #9 of app/views/adhesions/index.html.erb:
+6: 	<h2>Les utilisateurs de ce groupe</h2>
+7: 	<ul>
+8: 		<% @g.users.each do |gu| %>
+9: 		<li>Nom : <%= gu.nom %>, Email : <%= mail_to gu.email, 'Lui ecrire'><%= gu.email %></li>
+10: 		<% end %>
+11: 	</ul>
+12: 	<% end %>
+
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (203.1ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdhesionsController#index (for 127.0.0.1 at 2010-04-13 17:06:17) [GET]
+  [4;36;1mGroup Load (0.0ms)[0m   [0;1mSELECT * FROM `groups` [0m
+Rendering template within layouts/adhesions
+Rendering adhesions/index
+  [4;35;1mGroup Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `groups`[0m
+
+ActionView::TemplateError (undefined method `users' for nil:NilClass) on line #8 of app/views/adhesions/index.html.erb:
+5: 	<li><%= g.name %></li>
+6: 	<h2>Les utilisateurs de ce groupe</h2>
+7: 	<ul>
+8: 		<% @g.users.each do |gu| %>
+9: 		<li>Nom : <%= gu.nom %>, Email : <%= mail_to gu.email, 'Lui ecrire' %><%= gu.email %></li>
+10: 		<% end %>
+11: 	</ul>
+
+    app/views/adhesions/index.html.erb:8:in `block in _run_erb_app47views47adhesions47index46html46erb'
+    app/views/adhesions/index.html.erb:4:in `each'
+    app/views/adhesions/index.html.erb:4
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (93.8ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdhesionsController#index (for 127.0.0.1 at 2010-04-13 17:07:02) [GET]
+  [4;36;1mGroup Load (0.0ms)[0m   [0;1mSELECT * FROM `groups` [0m
+Rendering template within layouts/adhesions
+Rendering adhesions/index
+  [4;35;1mGroup Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `groups`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.* FROM `users` INNER JOIN `adhesions` ON `users`.id = `adhesions`.user_id WHERE ((`adhesions`.group_id = 1)) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.* FROM `users` INNER JOIN `adhesions` ON `users`.id = `adhesions`.user_id WHERE ((`adhesions`.group_id = 3)) [0m
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 281ms (View: 266, DB: 0) | 200 OK [http://localhost/adhesions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdhesionsController#index (for 127.0.0.1 at 2010-04-13 17:07:24) [GET]
+  [4;35;1mGroup Load (0.0ms)[0m   [0mSELECT * FROM `groups` [0m
+Rendering template within layouts/adhesions
+Rendering adhesions/index
+  [4;36;1mGroup Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `groups`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.* FROM `users` INNER JOIN `adhesions` ON `users`.id = `adhesions`.user_id WHERE ((`adhesions`.group_id = 1)) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.* FROM `users` INNER JOIN `adhesions` ON `users`.id = `adhesions`.user_id WHERE ((`adhesions`.group_id = 3)) [0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/adhesions]
+  [4;36;1mGroup Load (0.0ms)[0m   [0;1mSELECT * FROM `groups` LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAdhesion Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `adhesions`[0m
+  [4;36;1mAdhesion Create (0.0ms)[0m   [0;1mINSERT INTO `adhesions` (`user_id`, `group_id`, `created_at`, `updated_at`) VALUES(1, 1, '2010-04-13 15:17:34', '2010-04-13 15:17:34')[0m
+  [4;35;1mSQL (140.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.* FROM `users` INNER JOIN `adhesions` ON `users`.id = `adhesions`.user_id WHERE ((`adhesions`.group_id = 1)) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdhesionsController#index (for 127.0.0.1 at 2010-04-13 17:17:36) [GET]
+  [4;36;1mGroup Load (15.6ms)[0m   [0;1mSELECT * FROM `groups` [0m
+Rendering template within layouts/adhesions
+Rendering adhesions/index
+  [4;35;1mGroup Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `groups`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.* FROM `users` INNER JOIN `adhesions` ON `users`.id = `adhesions`.user_id WHERE ((`adhesions`.group_id = 1)) [0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.* FROM `users` INNER JOIN `adhesions` ON `users`.id = `adhesions`.user_id WHERE ((`adhesions`.group_id = 3)) [0m
+Completed in 31ms (View: 16, DB: 16) | 200 OK [http://localhost/adhesions]
+/!\ FAILSAFE /!\  2010-05-11 14:38:45 +0100
+  Status: 500 Internal Server Error
+  Unknown database 'allaiz'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    C:/Ruby/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2010-05-11 14:38:51 +0100
+  Status: 500 Internal Server Error
+  Unknown database 'allaiz'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    C:/Ruby/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+/!\ FAILSAFE /!\  2010-05-11 14:38:57 +0100
+  Status: 500 Internal Server Error
+  Unknown database 'allaiz'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `real_connect'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:589:in `connect'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `block (2 levels) in checkout'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `block in checkout'
+    C:/Ruby/lib/ruby/1.9.1/monitor.rb:190:in `mon_synchronize'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+    C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (7.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (19.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100210205951)
+  [4;35;1mSQL (31.0ms)[0m   [0mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `title` varchar(255), `content` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (9.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100210205951')[0m
+Migrating to CreateUsers (20100210211708)
+  [4;35;1mSQL (9.0ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `nom` varchar(255), `prenom` varchar(255), `email` varchar(255), `date_naissance` date, `date_inscription` datetime, `last_connect` datetime, `status` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (41.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100210211708')[0m
+Migrating to CreateComments (20100211094107)
+  [4;35;1mSQL (10.0ms)[0m   [0mCREATE TABLE `comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `commenter` varchar(255), `body` text, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100211094107')[0m
+Migrating to CreateGroups (20100413134209)
+  [4;35;1mSQL (10.0ms)[0m   [0mCREATE TABLE `groups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `test` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mGroup Columns (22.0ms)[0m   [0;1mSHOW FIELDS FROM `groups`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mGroup Create (1.0ms)[0m   [0;1mINSERT INTO `groups` (`name`, `description`, `test`, `user_id`, `created_at`, `updated_at`) VALUES('Groupe de David', NULL, NULL, NULL, '2010-05-11 12:43:21', '2010-05-11 12:43:21')[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100413134209')[0m
+Migrating to CreateAdhesions (20100413141055)
+  [4;35;1mSQL (29.0ms)[0m   [0mCREATE TABLE `adhesions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `group_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100413141055')[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (9.0ms)[0m   [0;1mSHOW FIELDS FROM `adhesions`[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mdescribe `adhesions`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW KEYS FROM `adhesions`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (12.0ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (8.0ms)[0m   [0;1mSHOW FIELDS FROM `groups`[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mdescribe `groups`[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mSHOW KEYS FROM `groups`[0m
+  [4;35;1mSQL (12.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (11.0ms)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 14:44:38) [GET]
+Rendering home/index
+Completed in 311ms (View: 308, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-05-11 14:44:43) [GET]
+  [4;36;1mUser Load (2.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 7111ms (View: 6766, DB: 4) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-05-11 14:45:18) [GET]
+  [4;35;1mUser Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/new
+Rendered users/_form (1242.0ms)
+Completed in 1348ms (View: 1317, DB: 10) | 200 OK [http://localhost/users/new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 14:53:19) [GET]
+Rendering home/index
+Completed in 7ms (View: 4, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 14:53:22) [GET]
+Rendering home/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 14:53:31) [GET]
+Rendering home/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 14:54:16) [GET]
+Rendering home/index
+Completed in 252ms (View: 249, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 14:54:18) [GET]
+Rendering home/index
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 14:59:52) [GET]
+Rendering home/index
+Completed in 271ms (View: 268, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 14:59:52) [GET]
+
+ArgumentError (invalid byte sequence in UTF-8):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:00:41) [GET]
+Rendering home/index
+Completed in 92ms (View: 89, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:00:56) [GET]
+Rendering home/index
+Completed in 31ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:00:56) [GET]
+
+ArgumentError (invalid byte sequence in UTF-8):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (136.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:01:08) [GET]
+Rendering home/index
+Completed in 27ms (View: 24, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:01:09) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/css/general.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:01:11) [GET]
+
+ActionController::RoutingError (No route matches "/design/logo/favicon.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:01:11) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/css/site.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:01:12) [GET]
+
+ActionController::RoutingError (No route matches "/design/logo/favicon.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:01:55) [GET]
+Rendering home/index
+Completed in 33ms (View: 30, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:01:55) [GET]
+
+ArgumentError (invalid byte sequence in UTF-8):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (138.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:03:17) [GET]
+Rendering home/index
+Completed in 28ms (View: 24, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:03:18) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/css/general.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:03:19) [GET]
+
+ActionController::RoutingError (No route matches "/..layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:03:20) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/css/site.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:03:35) [GET]
+Rendering home/index
+Completed in 30ms (View: 27, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:03:37) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/css/site.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:03:37) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/css/general.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:03:38) [GET]
+
+ActionController::RoutingError (No route matches "/..layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:03:59) [GET]
+Rendering home/index
+Completed in 31ms (View: 28, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:04:00) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/css/site.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:04:01) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/css/general.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:04:01) [GET]
+
+ActionController::RoutingError (No route matches "/..layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:04:15) [GET]
+Rendering home/index
+Completed in 32ms (View: 29, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (214.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:04:16) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/css/general.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:04:17) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/css/site.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:04:17) [GET]
+
+ActionController::RoutingError (No route matches "/..layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:04:36) [GET]
+Rendering home/index
+Completed in 31ms (View: 28, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:04:37) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/css/general.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:04:38) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/css/site.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:04:38) [GET]
+
+ActionController::RoutingError (No route matches "/..layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:05:22) [GET]
+Rendering home/index
+Completed in 32ms (View: 29, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:05:23) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/css/general.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:05:24) [GET]
+
+ActionController::RoutingError (No route matches "/..layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:05:25) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/css/site.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:20:37) [GET]
+Rendering home/index
+ERROR: compiling _run_erb_app47views47home47index46html46erb RAISED C:/Applications/rails/allaiz/app/views/home/index.html.erb:11: unknown regexp option - c
+Function body:           def _run_erb_app47views47home47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"fr\" lang=\"fr\">\n<head>\n\t<title></title>\t\n\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n\t<meta name=\"title\" content=\"\"/>\t\n\t<meta name=\"keywords\" content=\"\" />\t\n\t<meta name=\"description\" content=\"\" />\t\n\t<meta name=\"Identifier-URL\" content=\"\" />\n\t<link rel=\"shortcut icon\" href=\"/design/logo/favicon.png\" />\n\t"
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( stylesheet_link_tag ../layouts/css/general.css ).to_s); @output_buffer.concat " \n\t<link rel=\"stylesheet\" href=\"../layouts/css/general.css\" />\n</head>\n\n<body id=\"body\" class=\"body\">\n\n<div id=\"global\">\n\t<div id=\"header\">\n\t\t<div class=\"container\">\n\t\t\t<div id=\"container_logo\" class=\"left\" >\n\t\t\t\t<img id=\"logo\" src=\"..layouts/images/design/logo/logo.png\" title=\"\" alt=\"\" />\n\t\t\t</div>\n\t\t\t<div id=\"content_header\" class=\"right\">\t\t\n\t\t\t\t<div id=\"connexion\">\n\t\t\t\t\t<form id=\"form_connexion\" method=\"post\" action=\"\" class=\"left\">\n\t\t\t\t\t\t<h2>Connexion</h2>\n\t\t\t\t\t\t<div class=\"left label_form\">\n\t\t\t\t\t\t\t<p>\n\t\t\t\t\t\t\t\t<label>Email</label>\n\t\t\t\t\t\t\t\t<input type=\"text\" name=\"email\" value=\"\" />\n\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t<p>\n\t\t\t\t\t\t\t\t<label>Mot de passe</label>\n\t\t\t\t\t\t\t\t<input type=\"password\" name=\"password\" value=\"\" />\n\t\t\t\t\t\t\t</p>\t\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div id=\"submit_connexion\" class=\"submit right\">\n\t\t\t\t\t\t\t<p><input type=\"submit\" name=\"submit\" value=\"Connexion\" /></p>\n\t\t\t\t\t\t</div>\t\t\n\t\t\t\t\t\t<p id=\"container_lost_pass\" class=\"clear\">\n\t\t\t\t\t\t\t<a href=\"?p=password\" title=\"Tu as perdu ton mot de passe\" rel=\"Tu as perdu ton mot de passe\">Mot de passe perdu ?</a>\n\t\t\t\t\t\t</p>\t\t\t\t\t\t\t\t\n\t\t\t\t\t</form>\n\t\t\t\t\t<div id=\"header_inscription\" class=\"right\">\n\t\t\t\t\t\t<h2>Inscription</h2>\n\t\t\t\t\t\t"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( link_to "Pas encore inscrit ?", new_user_path ).to_s); @output_buffer.concat " \n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t</div> \n\t</div>\t\n\t<div id=\"middle\">\n\t\t<div class=\"container\">\n\t\t\t<h1>Bienvenue sur Allaiz</h1>\n\t\t\t<br />\n\t\t\t"
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( link_to "Voir les inscrits sur sur Allaiz", users_path ).to_s); @output_buffer.concat " \n\t\t</div>\t\t\t\t\n\t</div>\n\t<div id=\"footer\">\t\n\t\t<div class=\"container\">\n\t\t\n\t\t\t<ul id=\"menu_site\">\n\t\t\t\t<li><a href=\"?p=accueil\" rel=\"\" title=\"\">Accueil</a></li>\n\t\t\t\t<li><a href=\"?p=news_list\" rel=\"\" title=\"\">News</a></li>\n\t\t\t\t<li><a href=\"?p=classements\" rel=\"\" title=\"\">Classements</a></li>\n\t\t\t\t<li><a href=\"?p=annuaire\" rel=\"\" title=\"\">Annuaire</a></li>\n\t\t\t\t<li><a href=\"?p=faq\" rel=\"\" title=\"\">FAQ</a></li>\n\t\t\t\t<li><a href=\"?p=contact\" rel=\"\" title=\"\">Contact</a></li>\n\t\t\t\t<li><a href=\"forum\" rel=\"\" title=\"\">Forum</a></li>\n\t\t\t</ul>\n\t\t\t\n\t\t\t<br />\n\n\t\t</div>\t\t\t\t\n\t</div>\t\n\t<div id=\"copyright\">\t\n\t\t<div class=\"container\">\n\t\t\t<span>Copyright &copy; 2010</span> --\n\t\t\t<a href=\"?p=cgu\" title=\"Conditions g\xE9\xE9&eacute;n&eacute;rales d'utilisation\" rel=\"Conditions g&eacute;n&eacute;rales d'utilisation\">Conditions g&eacute;n&eacute;rales d'utilisation</a> --\n\t\t\t<a href=\"?p=confidentialite\" title=\"Politiques de confidentialit&eacute;\" rel=\"Politiques de confidentialit&eacute;\">Politiques de confidentialit&eacute;</a>\n\t\t</div>\t\t\t\t\n\t</div>\t\t\t\n</div>\n\t\n\n</body>\n</html>"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `module_eval'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `compile!'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action_with_flash'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process_with_filters'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `block in call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:8:in `synchronize'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+ActionView::TemplateError (C:/Applications/rails/allaiz/app/views/home/index.html.erb:11: unknown regexp option - c) on line #11 of app/views/home/index.html.erb:
+8: 	<meta name="description" content="" />	
+9: 	<meta name="Identifier-URL" content="" />
+10: 	<link rel="shortcut icon" href="/design/logo/favicon.png" />
+11: 	<%= stylesheet_link_tag ../layouts/css/general.css %> 
+12: 	<link rel="stylesheet" href="../layouts/css/general.css" />
+13: </head>
+14: 
+
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (195.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:20:46) [GET]
+Rendering home/index
+ERROR: compiling _run_erb_app47views47home47index46html46erb RAISED C:/Applications/rails/allaiz/app/views/home/index.html.erb:11: unknown regexp option - c
+Function body:           def _run_erb_app47views47home47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"fr\" lang=\"fr\">\n<head>\n\t<title></title>\t\n\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n\t<meta name=\"title\" content=\"\"/>\t\n\t<meta name=\"keywords\" content=\"\" />\t\n\t<meta name=\"description\" content=\"\" />\t\n\t<meta name=\"Identifier-URL\" content=\"\" />\n\t<link rel=\"shortcut icon\" href=\"/design/logo/favicon.png\" />\n\t"
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( stylesheet_link_tag ../layouts/css/general.css ).to_s); @output_buffer.concat " \n\t<link rel=\"stylesheet\" href=\"../layouts/css/general.css\" />\n</head>\n\n<body id=\"body\" class=\"body\">\n\n<div id=\"global\">\n\t<div id=\"header\">\n\t\t<div class=\"container\">\n\t\t\t<div id=\"container_logo\" class=\"left\" >\n\t\t\t\t<img id=\"logo\" src=\"..layouts/images/design/logo/logo.png\" title=\"\" alt=\"\" />\n\t\t\t</div>\n\t\t\t<div id=\"content_header\" class=\"right\">\t\t\n\t\t\t\t<div id=\"connexion\">\n\t\t\t\t\t<form id=\"form_connexion\" method=\"post\" action=\"\" class=\"left\">\n\t\t\t\t\t\t<h2>Connexion</h2>\n\t\t\t\t\t\t<div class=\"left label_form\">\n\t\t\t\t\t\t\t<p>\n\t\t\t\t\t\t\t\t<label>Email</label>\n\t\t\t\t\t\t\t\t<input type=\"text\" name=\"email\" value=\"\" />\n\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t<p>\n\t\t\t\t\t\t\t\t<label>Mot de passe</label>\n\t\t\t\t\t\t\t\t<input type=\"password\" name=\"password\" value=\"\" />\n\t\t\t\t\t\t\t</p>\t\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div id=\"submit_connexion\" class=\"submit right\">\n\t\t\t\t\t\t\t<p><input type=\"submit\" name=\"submit\" value=\"Connexion\" /></p>\n\t\t\t\t\t\t</div>\t\t\n\t\t\t\t\t\t<p id=\"container_lost_pass\" class=\"clear\">\n\t\t\t\t\t\t\t<a href=\"?p=password\" title=\"Tu as perdu ton mot de passe\" rel=\"Tu as perdu ton mot de passe\">Mot de passe perdu ?</a>\n\t\t\t\t\t\t</p>\t\t\t\t\t\t\t\t\n\t\t\t\t\t</form>\n\t\t\t\t\t<div id=\"header_inscription\" class=\"right\">\n\t\t\t\t\t\t<h2>Inscription</h2>\n\t\t\t\t\t\t"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( link_to "Pas encore inscrit ?", new_user_path ).to_s); @output_buffer.concat " \n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t</div> \n\t</div>\t\n\t<div id=\"middle\">\n\t\t<div class=\"container\">\n\t\t\t<h1>Bienvenue sur Allaiz</h1>\n\t\t\t<br />\n\t\t\t"
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( link_to "Voir les inscrits sur sur Allaiz", users_path ).to_s); @output_buffer.concat " \n\t\t</div>\t\t\t\t\n\t</div>\n\t<div id=\"footer\">\t\n\t\t<div class=\"container\">\n\t\t\n\t\t\t<ul id=\"menu_site\">\n\t\t\t\t<li><a href=\"?p=accueil\" rel=\"\" title=\"\">Accueil</a></li>\n\t\t\t\t<li><a href=\"?p=news_list\" rel=\"\" title=\"\">News</a></li>\n\t\t\t\t<li><a href=\"?p=classements\" rel=\"\" title=\"\">Classements</a></li>\n\t\t\t\t<li><a href=\"?p=annuaire\" rel=\"\" title=\"\">Annuaire</a></li>\n\t\t\t\t<li><a href=\"?p=faq\" rel=\"\" title=\"\">FAQ</a></li>\n\t\t\t\t<li><a href=\"?p=contact\" rel=\"\" title=\"\">Contact</a></li>\n\t\t\t\t<li><a href=\"forum\" rel=\"\" title=\"\">Forum</a></li>\n\t\t\t</ul>\n\t\t\t\n\t\t\t<br />\n\n\t\t</div>\t\t\t\t\n\t</div>\t\n\t<div id=\"copyright\">\t\n\t\t<div class=\"container\">\n\t\t\t<span>Copyright &copy; 2010</span> --\n\t\t\t<a href=\"?p=cgu\" title=\"Conditions g\xE9\xE9&eacute;n&eacute;rales d'utilisation\" rel=\"Conditions g&eacute;n&eacute;rales d'utilisation\">Conditions g&eacute;n&eacute;rales d'utilisation</a> --\n\t\t\t<a href=\"?p=confidentialite\" title=\"Politiques de confidentialit&eacute;\" rel=\"Politiques de confidentialit&eacute;\">Politiques de confidentialit&eacute;</a>\n\t\t</div>\t\t\t\t\n\t</div>\t\t\t\n</div>\n\t\n\n</body>\n</html>"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `module_eval'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `compile!'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action_with_flash'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process_with_filters'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `block in call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:8:in `synchronize'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+ActionView::TemplateError (C:/Applications/rails/allaiz/app/views/home/index.html.erb:11: unknown regexp option - c) on line #11 of app/views/home/index.html.erb:
+8: 	<meta name="description" content="" />	
+9: 	<meta name="Identifier-URL" content="" />
+10: 	<link rel="shortcut icon" href="/design/logo/favicon.png" />
+11: 	<%= stylesheet_link_tag ../layouts/css/general.css %> 
+12: 	<link rel="stylesheet" href="../layouts/css/general.css" />
+13: </head>
+14: 
+
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (187.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:25:34) [GET]
+Rendering home/index
+
+ActionView::TemplateError (undefined local variable or method `general' for #<ActionView::Base:0x4fe1200>) on line #11 of app/views/home/index.html.erb:
+8: 	<meta name="description" content="" />	
+9: 	<meta name="Identifier-URL" content="" />
+10: 	<link rel="shortcut icon" href="/design/logo/favicon.png" />
+11: 	<%= stylesheet_link_tag general.css %> 
+12: </head>
+13: 
+14: <body id="body" class="body">
+
+    app/views/home/index.html.erb:11
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (199.0ms)
+Rendered rescues/_request_and_response (4.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:26:38) [GET]
+Rendering home/index
+Completed in 286ms (View: 282, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:26:43) [GET]
+
+ActionController::RoutingError (No route matches "/..layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:27:24) [GET]
+Rendering home/index
+Completed in 35ms (View: 32, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:28:19) [GET]
+Rendering home/index
+Completed in 257ms (View: 254, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:28:24) [GET]
+
+ActionController::RoutingError (No route matches "/..layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:29:13) [GET]
+Rendering home/index
+Completed in 34ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:29:18) [GET]
+
+ActionController::RoutingError (No route matches "/..layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:31:32) [GET]
+Rendering home/index
+Completed in 33ms (View: 30, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:31:38) [GET]
+
+ActionController::RoutingError (No route matches "/images/common/backgrounds/white_line.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:31:38) [GET]
+
+ActionController::RoutingError (No route matches "/..layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:31:38) [GET]
+Rendering home/index
+Completed in 7ms (View: 4, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:31:40) [GET]
+
+ActionController::RoutingError (No route matches "/..layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:32:23) [GET]
+Rendering home/index
+Completed in 260ms (View: 256, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:32:28) [GET]
+
+ActionController::RoutingError (No route matches "/images/common/backgrounds/white_line.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:32:29) [GET]
+
+ActionController::RoutingError (No route matches "/..layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:32:32) [GET]
+Rendering home/index
+Completed in 7ms (View: 4, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:32:32) [GET]
+
+ActionController::RoutingError (No route matches "/images/common/backgrounds/white_line.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:32:32) [GET]
+
+ActionController::RoutingError (No route matches "/design/logo/favicon.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:32:32) [GET]
+
+ActionController::RoutingError (No route matches "/..layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:35:25) [GET]
+Rendering home/index
+Completed in 35ms (View: 31, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (546.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-05-11 15:36:11) [GET]
+  [4;36;1mUser Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/new
+Rendered users/_form (1052.0ms)
+Completed in 1457ms (View: 1140, DB: 11) | 200 OK [http://localhost/users/new]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:36:50) [GET]
+Rendering home/index
+Completed in 49ms (View: 46, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:36:55) [GET]
+
+ActionController::RoutingError (No route matches "/images/common/backgrounds/white_line.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:36:56) [GET]
+
+ActionController::RoutingError (No route matches "/..layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-05-11 15:39:52) [GET]
+Rendering home/index
+Completed in 6ms (View: 3, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:39:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/common/backgrounds/white_line.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-11 15:39:58) [GET]
+
+ActionController::RoutingError (No route matches "/..layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)

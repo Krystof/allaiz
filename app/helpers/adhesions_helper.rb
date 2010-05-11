@@ -1,0 +1,2 @@
+module AdhesionsHelper
+end

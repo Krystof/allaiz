@@ -1,0 +1,12 @@
+<h1>Editing adhesion</h1>
+
+<% form_for(@adhesion) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @adhesion %> |
+<%= link_to 'Back', adhesions_path %>

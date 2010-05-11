@@ -1,0 +1,33 @@
+<p>
+  <b>Nom du groupe :</b>
+  <%=h @group.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @group.description %>
+</p>
+
+<h2>Utilisateurs</h2> 
+<% @group.users.each do |u| %>  
+	<p>  
+		<b>Nom :</b>  
+		<%=h u.nom %>  
+	</p>
+	<p>  
+		<b>Prénom :</b>  
+		<%=h u.prenom %>  
+	</p> 
+	<p>  
+		<b>Email :</b>  
+		<%=h u.email %>  
+	</p>
+	
+	<p>
+		---------------------------------
+	</p>
+<% end %> 
+
+
+<%= link_to 'Modifier', edit_adhesion_path(@adhesion) %> |
+<%= link_to 'Retour', adhesions_path %> | 
