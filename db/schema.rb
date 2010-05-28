@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100413141055) do
+ActiveRecord::Schema.define(:version => 20100528125612) do
 
   create_table "adhesions", :force => true do |t|
     t.integer  "user_id"
@@ -35,6 +35,14 @@ ActiveRecord::Schema.define(:version => 20100413141055) do
     t.datetime "updated_at"
   end
 
+  create_table "messages", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "titre"
+    t.text     "contenu"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "posts", :force => true do |t|
     t.string   "name"
     t.string   "title"
@@ -43,12 +51,20 @@ ActiveRecord::Schema.define(:version => 20100413141055) do
     t.datetime "updated_at"
   end
 
+  create_table "sessions", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "ip_address"
+    t.string   "path"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", :force => true do |t|
     t.string   "nom"
     t.string   "prenom"
     t.string   "email"
+    t.string   "password"
     t.date     "date_naissance"
-    t.datetime "date_inscription"
     t.datetime "last_connect"
     t.integer  "status"
     t.datetime "created_at"

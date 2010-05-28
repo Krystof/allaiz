@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :messages
+
+  map.resources :sessions
+
   map.resources :adhesions
 
   map.resources :groups
@@ -12,6 +16,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :users, :has_many => :comments 
   map.resources :comments, :belongs_to => :users
 
+  map.resources :sessions  
+  
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

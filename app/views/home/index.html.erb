@@ -1,86 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
-<head>
-	<title></title>	
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="title" content=""/>	
-	<meta name="keywords" content="" />	
-	<meta name="description" content="" />	
-	<meta name="Identifier-URL" content="" />
-	<link rel="shortcut icon" href="/design/logo/favicon.png" />
-	<%= stylesheet_link_tag "general.css" %> 
-</head>
+<div class="inner-border">
+	<h1>Bienvenue sur Allaiz</h1>	
+	<div class="inner_content">
+		<%= link_to "Voir les inscrits sur sur Allaiz", users_path %>
+		<div class="clear"></div>	
 
-<body id="body" class="body">
 
-<div id="global">
-	<div id="header">
-		<div class="container">
-			<div id="container_logo" class="left" >
-				<img id="logo" src="..layouts/images/design/logo/logo.png" title="" alt="" />
-			</div>
-			<div id="content_header" class="right">		
-				<div id="connexion">
-					<form id="form_connexion" method="post" action="" class="left">
-						<h2>Connexion</h2>
-						<div class="left label_form">
-							<p>
-								<label>Email</label>
-								<input type="text" name="email" value="" />
-							</p>
-							<p>
-								<label>Mot de passe</label>
-								<input type="password" name="password" value="" />
-							</p>	
-						</div>
-						<div id="submit_connexion" class="submit right">
-							<p><input type="submit" name="submit" value="Connexion" /></p>
-						</div>										
-					</form>
-					<div id="header_inscription" class="right">
-						<h2>Inscription</h2>
-						<%= link_to "Pas encore inscrit ?", new_user_path %> 
-					</div>
-				</div>
-			</div>
-		</div> 
-	</div>	
-	<div id="middle">
-		<div class="container">
-			<div id="{CONTAINER}" class="shadowed">
-				<div class="inner-boundary">
-					<div  class="inner-border">
-						<h1>Bienvenue sur Allaiz</h1>	
-						<div class="inner_content">
-							<%= link_to "Voir les inscrits sur sur Allaiz", users_path %>
-							<div class="clear"></div>			
-						</div>				    
-					</div>
-				</div>
-			</div>
-		</div>				
-	</div>
-	<div id="footer">	
-		<div class="container">
 		
-			<ul id="menu_site">
-				<li><a href="?p=accueil" rel="" title="">Accueil</a></li>
-				<li><a href="?p=faq" rel="" title="">FAQ</a></li>
-				<li><a href="?p=contact" rel="" title="">Contact</a></li>
-			</ul>
-			
-			<br />
-		</div>				
-	</div>	
-	<div id="copyright">	
-		<div class="container">
-			<span>Copyright &copy; 2010</span> --
-			<a href="?p=cgu" title="Conditions g&eacute;n&eacute;rales d'utilisation" rel="Conditions g&eacute;n&eacute;rales d'utilisation">Conditions g&eacute;n&eacute;rales d'utilisation</a> --
-			<a href="?p=confidentialite" title="Politiques de confidentialit&eacute;" rel="Politiques de confidentialit&eacute;">Politiques de confidentialit&eacute;</a>
-		</div>				
-	</div>			
+	</div>				    
 </div>
-	
-
-</body>
-</html>
