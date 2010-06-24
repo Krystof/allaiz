@@ -548,3 +548,35 @@ div.shadowed h4
 	padding: 0 5px;
 	background-color:#E0E0E0;
 }
+
+#profil_info {
+	width: 680px;
+	border: 1px solid blue;
+}
+
+#avatar {
+	position: absolute;
+}
+
+#avatar_img {
+	border: 1px solid red;
+	margin-left: 690px;
+	position: absolute;
+}
+
+#gallery li {
+	top: 250px;
+	border:1px solid black;
+	float: left;
+	width: 50px;
+	padding:5px;
+	margin:5px;
+}
+
+
+#avatar_img .objet_porte
+{
+	position:absolute;
+	top:0;
+	left:0;
+}

@@ -1,0 +1,19 @@
+<%= @error_message %>
+
+<fieldset>
+  <legend>Connexion</legend>
+
+  <% form_for @session, :url => { :action => "create" } do |f| %>
+  
+    <label for="session_name">Email</label><br />
+    <%= f.text_field :name %><br />
+  
+    <label for="session_password">Password</label><br />
+    <%= f.password_field :password %><br />
+  
+    <%= submit_tag "Connexion" %>
+  
+  <% end %>
+
+</fieldset>
+

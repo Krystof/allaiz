@@ -1,33 +1,37 @@
-<h1>Liste des utilisateurs inscrits sur Allaiz</h1>
+<div class="inner-border">
+	<h1>Liste des utilisateurs inscrits sur Allaiz</h1>
+	<div class="inner_content">
+		<table border="1">
+			  <tr>
+				<th>Nom</th>
+				<th>Prenom</th>
+				<th>Email</th>
+				<th>Date de naissance</th>
+				<th>Date d'inscription</th>
+				<th>Derniere connexion</th>
+				<th>Etat</th>
+				<th colspan="3">Actions</th>
+			  </tr>
 
-<table border="1">
-  <tr>
-    <th>Nom</th>
-    <th>Prenom</th>
-    <th>Email</th>
-    <th>Date de naissance</th>
-    <th>Date d'inscription</th>
-    <th>Derniere connexion</th>
-    <th>Etat</th>
-	<th colspan="3">Actions</th>
-  </tr>
+			<% @users.each do |user| %>
+			  <tr>
+				<td><%=h user.nom %></td>
+				<td><%=h user.prenom %></td>
+				<td><%=h user.email %></td>
+				<td><%=h user.date_naissance %></td>
+				<td><%=h user.created_at  %></td>
+				<td><%=h user.last_connect %></td>
+				<td><%=h user.status %></td>
+				<td><%= link_to 'Voir', user %></td>
+				<td><%= link_to 'Modifier', edit_user_path(user) %></td>
+				<td><%= link_to 'Supprimer', user, :confirm => 'Etes vous sur ?', :method => :delete %></td>
+			  </tr>
+			<% end %>
+			</table>
 
-<% @users.each do |user| %>
-  <tr>
-    <td><%=h user.nom %></td>
-    <td><%=h user.prenom %></td>
-    <td><%=h user.email %></td>
-    <td><%=h user.date_naissance %></td>
-    <td><%=h user.date_inscription %></td>
-    <td><%=h user.last_connect %></td>
-    <td><%=h user.status %></td>
-    <td><%= link_to 'Voir', user %></td>
-    <td><%= link_to 'Modifier', edit_user_path(user) %></td>
-    <td><%= link_to 'Supprimer', user, :confirm => 'Etes vous sur ?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+			<br />
 
-<br />
-
-<%= link_to 'Nouvel utilisateur', new_user_path %>
+			<%= link_to 'Nouvel utilisateur', new_user_path %>
+		<div class="clear"></div>			
+	</div>				    
+</div>

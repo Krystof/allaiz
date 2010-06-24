@@ -1,43 +1,85 @@
-﻿<p>
-  <b>Nom:</b>
-  <%=h @user.nom %>
-</p>
-
-<p>
-  <b>Prenom:</b>
-  <%=h @user.prenom %>
-</p>
-
-<p>
-  <b>Email:</b>
-  <%=h @user.email %>
-</p>
-
-<p>
-  <b>Date naissance:</b>
-  <%=h @user.date_naissance %>
-</p>
-
-<h2>Commentaires</h2> 
-<% @user.comments.each do |c| %>  
-	<p>  
-		<b>Utilisateur :</b>  
-		<%=h c.commenter %>  
-	</p>  
-	<p>  
-		<b>Commentaire :</b>  
-		<%=h c.body %>  
-	</p>
+﻿<div id='profil_info'>
 	<p>
-		---------------------------------
+	  <b>Nom :</b>
+	  <%=h @user.nom %>
 	</p>
-<% end %> 
 
-<!--<p>
-  <b>Date inscription:</b>
-  <%=h @user.date_inscription %>
-</p>
+	<p>
+	  <b>Prenom :</b>
+	  <%=h @user.prenom %>
+	</p>
 
+	<p>
+	  <b>Sexe :</b>
+	  <%=h @user.gender %>
+	</p>
+
+	<p>
+	  <b>Email :</b>
+	  <%=h @user.email %>
+	</p>
+
+	<p>
+	  <b>Date naissance :</b>
+	  <%=h @user.date_naissance %>
+	</p>
+
+	<h2>Commentaires</h2> 
+	<% @user.comments.each do |c| %>  
+		<p>  
+			<b>Utilisateur :</b>  
+			<%=h c.commenter %>  
+		</p>  
+		<p>  
+			<b>Commentaire :</b>  
+			<%=h c.body %>  
+		</p>
+		<p>
+			---------------------------------
+		</p>
+	<% end %> 
+</div>
+
+<div id='avatar'>
+			<h4 class="ui-widget-header">Mon avatar</h4>
+<div id='avatar_img'  class="ui-widget-content ui-state-default">
+		<%=
+			if @user.gender == 'm'
+				image_tag("avatar/male/300x500/adultmale_0001.png")
+			else
+				image_tag("avatar/female/300x500/adultfemale_0001.png")
+			end
+		%>
+	</div>
+	<div id="vetement">
+			<ul id="gallery" class="gallery ui-helper-reset ui-helper-clearfix">
+			<% if @user.gender == 'm' %>
+					<li id="objet_1" class="miniature"><%= image_tag("avatar/male/50x50/hair_0009.png") %></li>
+					<li id="objet_2" class="miniature"><%= image_tag("avatar/male/50x50/belt_0010.png") %></li>
+					<li id="objet_3" class="miniature"><%= image_tag("avatar/male/50x50/bag_0009.png") %></li>
+					<li id="objet_4" class="miniature"><%= image_tag("avatar/male/50x50/sunglass_0010.png") %></li>
+					<li id="objet_5" class="miniature"><%= image_tag("avatar/male/50x50/shoe_0010.png") %></li>
+					<li id="objet_6" class="miniature"><%= image_tag("avatar/male/50x50/pants_0010.png") %></li>
+					<li id="objet_7" class="miniature"><%= image_tag("avatar/male/50x50/sleeve_0007.png") %></li>
+					<li id="objet_8" class="miniature"><%= image_tag("avatar/male/50x50/watch_0006.png") %></li>
+				<% else %>
+					<li id="objet_10" class="miniature"><%= image_tag("avatar/female/50x50/hair_0009.png") %></li>
+					<li id="objet_11" class="miniature"><%= image_tag("avatar/female/50x50/Topdress_0010.png") %></li>
+					<li id="objet_12" class="miniature"><%= image_tag("avatar/female/50x50/bag_0009.png") %></li>
+					<li id="objet_13" class="miniature"><%= image_tag("avatar/female/50x50/sunglass_0010.png") %></li>
+					<li id="objet_14" class="miniature"><%= image_tag("avatar/female/50x50/shoe_0010.png") %></li>
+					<li id="objet_15" class="miniature"><%= image_tag("avatar/female/50x50/pants_0010.png") %></li>
+					<li id="objet_16" class="miniature"><%= image_tag("avatar/female/50x50/earring_0010.png") %></li>
+					<li id="objet_17" class="miniature"><%= image_tag("avatar/female/50x50/bracelet_0010.png") %></li>
+			<% end %>
+			</ul>
+	</div>
+	<div  id="inventaire" style="border:1px solid black;width:300px;height:400px;float:left">
+		<h4>vetements portés</h4>
+		<ul id="clothe_box"></ul>
+	</div>
+</div>
+<!--
 <p>
   <b>Last connect:</b>
   <%=h @user.last_connect %>
