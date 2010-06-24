@@ -1,0 +1,23 @@
+<h1>Ecrire un nouveau message</h1>
+
+<% form_for(@message) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :titre %><br />
+    <%= f.text_field :titre %>
+  </p>
+  <p>
+    <%= f.label :contenu %><br />
+    <%= f.text_area :contenu %>
+  </p>
+  <p>
+     <%= f.label 'Destinataire' %><br />
+   <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.submit 'Enregistrer' %>
+  </p>  
+<% end %> 
+
+<%= link_to 'Retour', messages_path %>

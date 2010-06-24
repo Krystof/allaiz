@@ -1,0 +1,30 @@
+<div class="inner-border">
+	<h1>Boites de reception</h1>
+	<div class="inner_content">
+		<table border="1">
+			  <tr>
+				<th>&nbsp;</th>
+				<th>&nbsp;</th>
+				<th>Expediteur</th>
+				<th>Titre</th>
+				<th>Date</th>
+			  </tr>
+
+			<% @messages.each do |message| %>
+			<% user = User.find(message.user_id) %>
+			  <tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td><%=h user.nom  %> &nbsp;<%=h user.prenom %></td>
+				<td><%=h message.titre %></td>
+				<td><%=h message.created_at  %></td>
+			  </tr>
+			<% end %>
+			</table>
+
+			<br />
+
+			<%= link_to 'Ecrire un nouveau message', new_message_path %>
+		<div class="clear"></div>			
+	</div>				    
+</div>

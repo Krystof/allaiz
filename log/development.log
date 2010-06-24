@@ -35618,3 +35618,2812 @@ ActionController::UnknownAction (No action responded to index. Actions: ensure_a
   C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-07 17:31:30) [GET]
+Rendering template within layouts/default
+Rendering home/index
+Completed in 6459ms (View: 404, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-08 11:29:09) [GET]
+Rendering template within layouts/default
+Rendering home/index
+Completed in 13644ms (View: 997, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-08 11:29:33) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (14.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-08 11:29:35) [GET]
+
+ActionController::RoutingError (No route matches "/design/logo/favicon.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-08 11:29:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/common/backgrounds/white_line.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (8.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-08 11:29:36) [GET]
+
+ActionController::RoutingError (No route matches "/design/logo/favicon.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-08 11:29:42) [GET]
+  [4;36;1mSession Columns (108.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+Rendering sessions/new
+Completed in 595ms (View: 165, DB: 108) | 200 OK [http://localhost/sessions/new]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-08 11:29:52) [POST]
+  Parameters: {"authenticity_token"=>"HN9YiucX0ATnO0Fe13GPIrXkQGamRyn4dseH0h0QZt8=", "session"=>{"name"=>"krystof973@hotmail.com", "password"=>"guyane"}, "commit"=>"Connexion"}
+  [4;35;1mSession Columns (12.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (48.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'krystof973@hotmail.com') LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mROLLBACK[0m
+Rendering sessions/new
+Completed in 1064ms (View: 8, DB: 66) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-08 11:30:02) [GET]
+Rendering template within layouts/default
+Rendering home/index
+Completed in 43ms (View: 38, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-08 11:30:06) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-08 11:30:06) [GET]
+
+ActionController::RoutingError (No route matches "/images/common/backgrounds/white_line.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-08 11:30:16) [GET]
+  [4;36;1mSession Columns (11.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+Rendering sessions/new
+Completed in 128ms (View: 37, DB: 12) | 200 OK [http://localhost/sessions/new]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-08 11:30:22) [POST]
+  Parameters: {"authenticity_token"=>"HN9YiucX0ATnO0Fe13GPIrXkQGamRyn4dseH0h0QZt8=", "session"=>{"name"=>"krystof973@hotmail.com", "password"=>"test"}, "commit"=>"Connexion"}
+  [4;35;1mSession Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (13.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'krystof973@hotmail.com') LIMIT 1[0m
+  [4;35;1mSession Create (1.0ms)[0m   [0mINSERT INTO `sessions` (`user_id`, `ip_address`, `path`, `created_at`, `updated_at`) VALUES(1, NULL, NULL, '2010-06-08 09:30:22', '2010-06-08 09:30:22')[0m
+  [4;36;1mSQL (22.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Redirected to http://localhost:3000/
+Completed in 231ms (DB: 58) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-08 11:30:23) [GET]
+  [4;36;1mSession Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (2.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSession Update (2.0ms)[0m   [0mUPDATE `sessions` SET `ip_address` = '127.0.0.1', `path` = '/', `updated_at` = '2010-06-08 09:30:23' WHERE `id` = 2[0m
+  [4;36;1mSQL (28.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (12.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/default
+Rendering home/index
+Completed in 124ms (View: 18, DB: 60) | 200 OK [http://localhost/]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-08 11:30:28) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (7.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-08 11:30:28) [GET]
+
+ActionController::RoutingError (No route matches "/images/common/backgrounds/white_line.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-08 11:30:32) [GET]
+  [4;35;1mSession Columns (12.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (2.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSession Update (65.0ms)[0m   [0;1mUPDATE `sessions` SET `path` = '/messages', `updated_at` = '2010-06-08 09:30:32' WHERE `id` = 2[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (14.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+ActionController::UnknownAction (No action responded to index. Actions: ensure_admin, ensure_login, and ensure_logout):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-08 11:37:55) [GET]
+  [4;36;1mSession Columns (14.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (2.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (14.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Load (33.0ms)[0m   [0;1mSELECT * FROM `messages` [0m
+
+ActionView::MissingTemplate (Missing template messages/index.erb in view path app/views):
+  app/controllers/messages_controller.rb:6:in `index'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-08 11:38:37) [GET]
+  [4;35;1mSession Columns (11.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (1.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (12.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Load (1.0ms)[0m   [0mSELECT * FROM `messages` [0m
+
+ActionView::MissingTemplate (Missing template messages/index.erb in view path app/views):
+  app/controllers/messages_controller.rb:9:in `index'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-08 12:16:50) [GET]
+  [4;36;1mSession Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (3.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (11.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReception Load (0.0ms)[0m   [0;1mMysql::Error: Table 'allaiz.receptions' doesn't exist: SELECT * FROM `receptions` [0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'allaiz.receptions' doesn't exist: SELECT * FROM `receptions` ):
+  app/controllers/messages_controller.rb:7:in `index'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (221.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100210205951)
+Migrating to CreateUsers (20100210211708)
+Migrating to CreateComments (20100211094107)
+Migrating to CreateGroups (20100413134209)
+Migrating to CreateAdhesions (20100413141055)
+Migrating to CreateSessions (20100525175558)
+Migrating to CreateMessages (20100528125612)
+Migrating to CreateReceptions (20100608094546)
+  [4;36;1mSQL (39.0ms)[0m   [0;1mCREATE TABLE `receptions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `etat` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100608094546')[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (8.0ms)[0m   [0mSHOW FIELDS FROM `adhesions`[0m
+  [4;36;1mSQL (8.0ms)[0m   [0;1mdescribe `adhesions`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW KEYS FROM `adhesions`[0m
+  [4;36;1mSQL (7.0ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (9.0ms)[0m   [0mdescribe `comments`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW KEYS FROM `comments`[0m
+  [4;35;1mSQL (7.0ms)[0m   [0mSHOW FIELDS FROM `groups`[0m
+  [4;36;1mSQL (9.0ms)[0m   [0;1mdescribe `groups`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW KEYS FROM `groups`[0m
+  [4;36;1mSQL (8.0ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mSQL (9.0ms)[0m   [0mdescribe `messages`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW KEYS FROM `messages`[0m
+  [4;35;1mSQL (8.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (9.0ms)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (8.0ms)[0m   [0;1mSHOW FIELDS FROM `receptions`[0m
+  [4;35;1mSQL (9.0ms)[0m   [0mdescribe `receptions`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW KEYS FROM `receptions`[0m
+  [4;35;1mSQL (8.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (9.0ms)[0m   [0;1mdescribe `sessions`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW KEYS FROM `sessions`[0m
+  [4;36;1mSQL (8.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-08 12:19:28) [GET]
+  [4;35;1mSession Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (1.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReception Load (1.0ms)[0m   [0mSELECT * FROM `receptions` [0m
+Rendering messages/index
+Completed in 196ms (View: 118, DB: 22) | 200 OK [http://localhost/messages]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-08 12:22:33) [GET]
+  [4;36;1mSession Columns (14.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (2.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReception Load (1.0ms)[0m   [0;1mSELECT * FROM `receptions` [0m
+Rendering messages/index
+Completed in 115ms (View: 25, DB: 34) | 200 OK [http://localhost/messages]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-08 12:39:40) [GET]
+  [4;35;1mSession Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (1.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReception Load (1.0ms)[0m   [0mSELECT * FROM `receptions` [0m
+Rendering messages/index
+Completed in 101ms (View: 24, DB: 22) | 200 OK [http://localhost/messages]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-08 12:42:13) [GET]
+  [4;36;1mSession Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReception Load (1.0ms)[0m   [0;1mSELECT * FROM `receptions` [0m
+Rendering messages/index
+Completed in 81ms (View: 4, DB: 23) | 200 OK [http://localhost/messages]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (81.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100210205951)
+  [4;35;1mSQL (35.0ms)[0m   [0mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `title` varchar(255), `content` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (28.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100210205951')[0m
+Migrating to CreateUsers (20100210211708)
+  [4;35;1mSQL (27.0ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `nom` varchar(255), `prenom` varchar(255), `email` varchar(255), `password` varchar(255), `date_naissance` date, `last_connect` datetime, `status` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (23.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100210211708')[0m
+Migrating to CreateComments (20100211094107)
+  [4;35;1mSQL (10.0ms)[0m   [0mCREATE TABLE `comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `commenter` varchar(255), `body` text, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100211094107')[0m
+Migrating to CreateGroups (20100413134209)
+  [4;35;1mSQL (36.0ms)[0m   [0mCREATE TABLE `groups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `test` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mGroup Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `groups`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mGroup Create (1.0ms)[0m   [0;1mINSERT INTO `groups` (`name`, `description`, `test`, `user_id`, `created_at`, `updated_at`) VALUES('Groupe de David', NULL, NULL, NULL, '2010-06-08 10:46:37', '2010-06-08 10:46:37')[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100413134209')[0m
+Migrating to CreateAdhesions (20100413141055)
+  [4;35;1mSQL (16.0ms)[0m   [0mCREATE TABLE `adhesions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `group_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (9.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100413141055')[0m
+Migrating to CreateSessions (20100525175558)
+  [4;35;1mSQL (35.0ms)[0m   [0mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `ip_address` varchar(255), `path` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (8.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100525175558')[0m
+Migrating to CreateMessages (20100528125612)
+  [4;35;1mSQL (44.0ms)[0m   [0mCREATE TABLE `messages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `message_id` int(11), `titre` varchar(255), `contenu` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (9.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100528125612')[0m
+Migrating to CreateReceptions (20100608094546)
+  [4;35;1mSQL (39.0ms)[0m   [0mCREATE TABLE `receptions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `etat` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100608094546')[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (12.0ms)[0m   [0;1mSHOW FIELDS FROM `adhesions`[0m
+  [4;35;1mSQL (13.0ms)[0m   [0mdescribe `adhesions`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW KEYS FROM `adhesions`[0m
+  [4;35;1mSQL (12.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (11.0ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (8.0ms)[0m   [0;1mSHOW FIELDS FROM `groups`[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mdescribe `groups`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW KEYS FROM `groups`[0m
+  [4;35;1mSQL (13.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mSQL (13.0ms)[0m   [0;1mdescribe `messages`[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mSHOW KEYS FROM `messages`[0m
+  [4;36;1mSQL (11.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (13.0ms)[0m   [0mSHOW FIELDS FROM `receptions`[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mdescribe `receptions`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW KEYS FROM `receptions`[0m
+  [4;36;1mSQL (11.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (12.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (12.0ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-08 12:48:14) [GET]
+  [4;35;1mSession Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (1.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:maintain_session_and_user] rendered_or_redirected.
+Completed in 26ms (DB: 10) | 302 Found [http://localhost/messages]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-08 12:48:15) [GET]
+Rendering template within layouts/default
+Rendering home/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-08 12:48:16) [GET]
+
+ActionController::RoutingError (No route matches "/images/common/backgrounds/white_line.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-08 12:48:21) [GET]
+  [4;35;1mSession Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+Rendering sessions/new
+Completed in 36ms (View: 8, DB: 11) | 200 OK [http://localhost/sessions/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-08 12:48:22) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-08 12:48:29) [POST]
+  Parameters: {"authenticity_token"=>"HN9YiucX0ATnO0Fe13GPIrXkQGamRyn4dseH0h0QZt8=", "session"=>{"name"=>"krystof973@hotmail.com", "password"=>"test"}, "commit"=>"Connexion"}
+  [4;36;1mSession Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'krystof973@hotmail.com') LIMIT 1[0m
+  [4;36;1mSession Create (2.0ms)[0m   [0;1mINSERT INTO `sessions` (`user_id`, `ip_address`, `path`, `created_at`, `updated_at`) VALUES(1, NULL, NULL, '2010-06-08 10:48:29', '2010-06-08 10:48:29')[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Redirected to http://localhost:3000/
+Completed in 76ms (DB: 27) | 302 Found [http://localhost/sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-08 12:48:30) [GET]
+  [4;35;1mSession Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (2.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSession Update (1.0ms)[0m   [0;1mUPDATE `sessions` SET `ip_address` = '127.0.0.1', `path` = '/', `updated_at` = '2010-06-08 10:48:30' WHERE `id` = 1[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (3.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/default
+Rendering home/index
+Completed in 91ms (View: 15, DB: 27) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-08 12:49:35) [GET]
+  [4;36;1mSession Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/default
+Rendering home/index
+Completed in 742ms (View: 130, DB: 23) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-08 12:49:37) [GET]
+
+ActionController::RoutingError (No route matches "/images/common/backgrounds/white_line.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-08 12:49:42) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-08 12:49:43) [GET]
+  [4;36;1mSession Columns (11.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSession Update (2.0ms)[0m   [0mUPDATE `sessions` SET `path` = '/messages', `updated_at` = '2010-06-08 10:49:43' WHERE `id` = 1[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReception Load (2.0ms)[0m   [0mSELECT * FROM `receptions` [0m
+Rendering messages/index
+Completed in 134ms (View: 46, DB: 31) | 200 OK [http://localhost/messages]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-06-08 12:49:50) [GET]
+  [4;36;1mSession Columns (11.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSession Update (2.0ms)[0m   [0mUPDATE `sessions` SET `path` = '/messages/new', `updated_at` = '2010-06-08 10:49:50' WHERE `id` = 1[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (3.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+ActionController::UnknownAction (No action responded to new. Actions: ensure_admin, ensure_login, ensure_logout, and index):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (8.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (101.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100210205951)
+  [4;35;1mSQL (9.0ms)[0m   [0mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `title` varchar(255), `content` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (34.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100210205951')[0m
+Migrating to CreateUsers (20100210211708)
+  [4;35;1mSQL (11.0ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `nom` varchar(255), `prenom` varchar(255), `email` varchar(255), `password` varchar(255), `date_naissance` date, `last_connect` datetime, `status` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (27.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100210211708')[0m
+Migrating to CreateComments (20100211094107)
+  [4;35;1mSQL (14.0ms)[0m   [0mCREATE TABLE `comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `commenter` varchar(255), `body` text, `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100211094107')[0m
+Migrating to CreateGroups (20100413134209)
+  [4;35;1mSQL (39.0ms)[0m   [0mCREATE TABLE `groups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `test` varchar(255), `user_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mGroup Columns (13.0ms)[0m   [0;1mSHOW FIELDS FROM `groups`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mGroup Create (1.0ms)[0m   [0;1mINSERT INTO `groups` (`name`, `description`, `test`, `user_id`, `created_at`, `updated_at`) VALUES('Groupe de David', NULL, NULL, NULL, '2010-06-08 10:57:20', '2010-06-08 10:57:20')[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (43.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100413134209')[0m
+Migrating to CreateAdhesions (20100413141055)
+  [4;35;1mSQL (10.0ms)[0m   [0mCREATE TABLE `adhesions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `group_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (30.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100413141055')[0m
+Migrating to CreateSessions (20100525175558)
+  [4;35;1mSQL (14.0ms)[0m   [0mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `ip_address` varchar(255), `path` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100525175558')[0m
+Migrating to CreateMessages (20100528125612)
+  [4;35;1mSQL (17.0ms)[0m   [0mCREATE TABLE `messages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `titre` varchar(255), `contenu` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (9.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100528125612')[0m
+Migrating to CreateReceptions (20100608094546)
+  [4;35;1mSQL (10.0ms)[0m   [0mCREATE TABLE `receptions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` int(11), `message_id` int(11), `etat` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (19.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100608094546')[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (5.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (12.0ms)[0m   [0;1mSHOW FIELDS FROM `adhesions`[0m
+  [4;35;1mSQL (12.0ms)[0m   [0mdescribe `adhesions`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW KEYS FROM `adhesions`[0m
+  [4;35;1mSQL (12.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (11.0ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (11.0ms)[0m   [0;1mSHOW FIELDS FROM `groups`[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mdescribe `groups`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `groups`[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mSQL (10.0ms)[0m   [0;1mdescribe `messages`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW KEYS FROM `messages`[0m
+  [4;36;1mSQL (12.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mSHOW FIELDS FROM `receptions`[0m
+  [4;36;1mSQL (12.0ms)[0m   [0;1mdescribe `receptions`[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSHOW KEYS FROM `receptions`[0m
+  [4;36;1mSQL (12.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (12.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (11.0ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-08 12:57:39) [GET]
+  [4;35;1mSession Columns (12.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (1.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as [:maintain_session_and_user] rendered_or_redirected.
+Completed in 29ms (DB: 15) | 302 Found [http://localhost/messages]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-08 12:57:39) [GET]
+Rendering template within layouts/default
+Rendering home/index
+Completed in 16ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (652.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-16 10:59:23) [GET]
+Rendering template within layouts/default
+Rendering home/index
+Completed in 5654ms (View: 484, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-16 10:59:32) [GET]
+
+ActionController::RoutingError (No route matches "/images/common/backgrounds/white_line.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-16 10:59:34) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-16 10:59:34) [GET]
+
+ActionController::RoutingError (No route matches "/design/logo/favicon.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-16 10:59:35) [GET]
+  [4;36;1mSession Columns (29.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+Rendering sessions/new
+Completed in 340ms (View: 57, DB: 31) | 200 OK [http://localhost/sessions/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-16 10:59:35) [GET]
+
+ActionController::RoutingError (No route matches "/design/logo/favicon.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-16 10:59:43) [POST]
+  Parameters: {"authenticity_token"=>"x2UmAsn7f6GWCE4+k5Q8w6oMwBXl440O+Mfr8NU0OLc=", "session"=>{"name"=>"krystof973@hotmail.com", "password"=>"guyane"}, "commit"=>"Connexion"}
+  [4;35;1mSession Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (29.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'krystof973@hotmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering sessions/new
+Completed in 306ms (View: 4, DB: 34) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-16 10:59:49) [POST]
+  Parameters: {"authenticity_token"=>"x2UmAsn7f6GWCE4+k5Q8w6oMwBXl440O+Mfr8NU0OLc=", "session"=>{"name"=>"krystof973@hotmail.com", "password"=>"test"}, "commit"=>"Connexion"}
+  [4;36;1mSession Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'krystof973@hotmail.com') LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mROLLBACK[0m
+Rendering sessions/new
+Completed in 31ms (View: 4, DB: 10) | 200 OK [http://localhost/sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-16 10:59:54) [POST]
+  Parameters: {"authenticity_token"=>"x2UmAsn7f6GWCE4+k5Q8w6oMwBXl440O+Mfr8NU0OLc=", "session"=>{"name"=>"krystof973@hotmail.com", "password"=>"test"}, "commit"=>"Connexion"}
+  [4;35;1mSession Columns (12.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'krystof973@hotmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering sessions/new
+Completed in 58ms (View: 2, DB: 17) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-16 11:00:44) [POST]
+  Parameters: {"authenticity_token"=>"x2UmAsn7f6GWCE4+k5Q8w6oMwBXl440O+Mfr8NU0OLc=", "session"=>{"name"=>"krystof973@hotmail.com", "password"=>"test"}, "commit"=>"Connexion"}
+  [4;36;1mSession Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'krystof973@hotmail.com') LIMIT 1[0m
+  [4;36;1mSession Create (1.0ms)[0m   [0;1mINSERT INTO `sessions` (`user_id`, `ip_address`, `path`, `created_at`, `updated_at`) VALUES(1, NULL, NULL, '2010-06-16 09:00:44', '2010-06-16 09:00:44')[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Load (2.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Redirected to http://localhost:3000/
+Completed in 61ms (DB: 22) | 302 Found [http://localhost/sessions]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-16 11:00:45) [GET]
+  [4;35;1mSession Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (0.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSession Update (0.0ms)[0m   [0;1mUPDATE `sessions` SET `ip_address` = '127.0.0.1', `path` = '/', `updated_at` = '2010-06-16 09:00:45' WHERE `id` = 1[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/default
+Rendering home/index
+Completed in 33ms (View: 6, DB: 12) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-16 11:00:45) [GET]
+
+ActionController::RoutingError (No route matches "/images/common/backgrounds/white_line.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-16 11:01:48) [GET]
+  [4;36;1mSession Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSession Update (1.0ms)[0m   [0mUPDATE `sessions` SET `path` = '/messages', `updated_at` = '2010-06-16 09:01:48' WHERE `id` = 1[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReception Load (1.0ms)[0m   [0mSELECT * FROM `receptions` [0m
+Rendering messages/index
+Completed in 700ms (View: 85, DB: 29) | 200 OK [http://localhost/messages]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-06-16 11:01:54) [GET]
+  [4;36;1mSession Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSession Update (2.0ms)[0m   [0mUPDATE `sessions` SET `path` = '/messages/new', `updated_at` = '2010-06-16 09:01:54' WHERE `id` = 1[0m
+  [4;36;1mSQL (40.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+ActionController::UnknownAction (No action responded to new. Actions: ensure_admin, ensure_login, ensure_logout, and index):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-06-16 11:11:52) [GET]
+  [4;35;1mSession Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (1.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+Rendering messages/new
+
+ActionView::TemplateError (undefined method `textarea_field' for #<ActionView::Helpers::FormBuilder:0x52fd080>) on line #12 of app/views/messages/new.html.erb:
+9:   </p>
+10:   <p>
+11:     <%= f.label :message %><br />
+12:     <%= f.textarea_field :message %>
+13:   </p>
+14: 
+15:   <p>
+
+    app/views/messages/new.html.erb:12:in `block in _run_erb_app47views47messages47new46html46erb'
+    app/views/messages/new.html.erb:3
+    app/controllers/messages_controller.rb:18:in `new'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (123.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-06-16 11:12:27) [GET]
+  [4;36;1mSession Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering messages/new
+
+ActionView::TemplateError (undefined method `textarea' for #<ActionView::Helpers::FormBuilder:0x3badc0>) on line #12 of app/views/messages/new.html.erb:
+9:   </p>
+10:   <p>
+11:     <%= f.label :message %><br />
+12:     <%= f.textarea :message %>
+13:   </p>
+14: 
+15:   <p>
+
+    app/views/messages/new.html.erb:12:in `block in _run_erb_app47views47messages47new46html46erb'
+    app/views/messages/new.html.erb:3
+    app/controllers/messages_controller.rb:18:in `new'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (183.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-06-16 11:14:32) [GET]
+  [4;35;1mSession Columns (11.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (1.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+Rendering messages/new
+
+ActionView::TemplateError (undefined method `message' for #<Message:0x3f8b360>) on line #12 of app/views/messages/new.html.erb:
+9:   </p>
+10:   <p>
+11:     <%= f.label :message %><br />
+12:     <%= f.text_area :message %>
+13:   </p>
+14: 
+15:   <p>
+
+    app/views/messages/new.html.erb:12:in `block in _run_erb_app47views47messages47new46html46erb'
+    app/views/messages/new.html.erb:3
+    app/controllers/messages_controller.rb:18:in `new'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (204.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-06-16 11:15:49) [GET]
+  [4;36;1mSession Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering messages/new
+
+ActionView::TemplateError (undefined method `destinataire' for #<Message:0x4fdfb40>) on line #17 of app/views/messages/new.html.erb:
+14: 
+15:   <p>
+16:     <%= f.label :destinataire %><br />
+17:     <%= f.text_field :destinataire %>
+18:   </p>
+19: 
+20:   <p>
+
+    app/views/messages/new.html.erb:17:in `block in _run_erb_app47views47messages47new46html46erb'
+    app/views/messages/new.html.erb:3
+    app/controllers/messages_controller.rb:18:in `new'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (82.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-06-16 11:16:26) [GET]
+  [4;35;1mSession Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (0.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+Rendering messages/new
+
+ActionView::TemplateError (undefined method `hiiden_field' for #<ActionView::Helpers::FormBuilder:0x5619420>) on line #17 of app/views/messages/new.html.erb:
+14: 
+15:   <p>
+16:     <%= f.label :user_id %><br />
+17:     <%= f.hiiden_field :user_id %>
+18:   </p>
+19: 
+20:   <p>
+
+    app/views/messages/new.html.erb:17:in `block in _run_erb_app47views47messages47new46html46erb'
+    app/views/messages/new.html.erb:3
+    app/controllers/messages_controller.rb:18:in `new'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (75.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-06-16 11:17:39) [GET]
+  [4;36;1mSession Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (0.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering messages/new
+
+ActionView::TemplateError (undefined method `hiiden_field' for #<ActionView::Helpers::FormBuilder:0x385a5a0>) on line #17 of app/views/messages/new.html.erb:
+14: 
+15:   <p>
+16:     <%= f.label :user_id %><br />
+17:     <%= f.hiiden_field :user_id %>
+18:   </p>
+19: 
+20:   <p>
+
+    app/views/messages/new.html.erb:17:in `block in _run_erb_app47views47messages47new46html46erb'
+    app/views/messages/new.html.erb:3
+    app/controllers/messages_controller.rb:18:in `new'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (107.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-06-16 11:17:55) [GET]
+  [4;35;1mSession Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (0.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+Rendering messages/new
+Completed in 45ms (View: 11, DB: 12) | 200 OK [http://localhost/messages/new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-06-16 11:17:56) [GET]
+  [4;36;1mSession Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (3.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering messages/new
+Completed in 98ms (View: 9, DB: 34) | 200 OK [http://localhost/messages/new]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-06-16 11:18:00) [POST]
+  Parameters: {"authenticity_token"=>"x2UmAsn7f6GWCE4+k5Q8w6oMwBXl440O+Mfr8NU0OLc=", "message"=>{"titre"=>"", "contenu"=>"", "user_id"=>""}, "commit"=>"Enregistrer"}
+  [4;35;1mSession Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (2.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSession Update (1.0ms)[0m   [0;1mUPDATE `sessions` SET `path` = '/messages', `updated_at` = '2010-06-16 09:18:00' WHERE `id` = 1[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+ActionController::UnknownAction (No action responded to create. Actions: ensure_admin, ensure_login, ensure_logout, index, and new):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-16 11:18:07) [GET]
+  [4;36;1mSession Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (0.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReception Load (0.0ms)[0m   [0;1mSELECT * FROM `receptions` [0m
+Rendering messages/index
+Completed in 32ms (View: 1, DB: 9) | 200 OK [http://localhost/messages]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-06-16 11:18:08) [GET]
+  [4;35;1mSession Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (0.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSession Update (0.0ms)[0m   [0;1mUPDATE `sessions` SET `path` = '/messages/new', `updated_at` = '2010-06-16 09:18:08' WHERE `id` = 1[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering messages/new
+Completed in 42ms (View: 4, DB: 15) | 200 OK [http://localhost/messages/new]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-06-16 11:27:51) [GET]
+  [4;35;1mSession Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (0.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (3.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+Rendering messages/new
+Completed in 74ms (View: 16, DB: 21) | 200 OK [http://localhost/messages/new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2010-06-16 11:39:58) [POST]
+  Parameters: {"authenticity_token"=>"x2UmAsn7f6GWCE4+k5Q8w6oMwBXl440O+Mfr8NU0OLc=", "message"=>{"titre"=>"o", "contenu"=>"o", "user_id"=>""}, "commit"=>"Enregistrer"}
+
+SyntaxError (C:/Applications/rails/allaiz/app/controllers/messages_controller.rb:33: syntax error, unexpected '='
+      = @person.sessions.create
+       ^):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (66.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2010-06-16 11:41:52) [POST]
+  Parameters: {"authenticity_token"=>"x2UmAsn7f6GWCE4+k5Q8w6oMwBXl440O+Mfr8NU0OLc=", "message"=>{"titre"=>"o", "contenu"=>"o", "user_id"=>""}, "commit"=>"Enregistrer"}
+
+SyntaxError (C:/Applications/rails/allaiz/app/controllers/messages_controller.rb:33: invalid multibyte char (US-ASCII)
+C:/Applications/rails/allaiz/app/controllers/messages_controller.rb:33: syntax error, unexpected ':', expecting keyword_end
+        flash[:notice] = 'Tu vien d\'envoyer un message à : ' + 
+                                                           ^
+C:/Applications/rails/allaiz/app/controllers/messages_controller.rb:33: unterminated string meets end of file):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (53.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-06-16 11:42:13) [POST]
+  Parameters: {"authenticity_token"=>"x2UmAsn7f6GWCE4+k5Q8w6oMwBXl440O+Mfr8NU0OLc=", "message"=>{"titre"=>"o", "contenu"=>"o", "user_id"=>""}, "commit"=>"Enregistrer"}
+  [4;36;1mSession Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (0.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSession Update (1.0ms)[0m   [0mUPDATE `sessions` SET `path` = '/messages', `updated_at` = '2010-06-16 09:42:13' WHERE `id` = 1[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReception Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `receptions`[0m
+
+NoMethodError (undefined method `user_id' for #<User:0x4f45a00>):
+  app/controllers/messages_controller.rb:27:in `create'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (55.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-06-16 11:42:37) [POST]
+  Parameters: {"authenticity_token"=>"x2UmAsn7f6GWCE4+k5Q8w6oMwBXl440O+Mfr8NU0OLc=", "message"=>{"titre"=>"o", "contenu"=>"o", "user_id"=>""}, "commit"=>"Enregistrer"}
+  [4;36;1mSession Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mReception Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `receptions`[0m
+
+NoMethodError (undefined method `user_id' for #<User:0x377fc40>):
+  app/controllers/messages_controller.rb:27:in `create'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (91.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-06-16 11:43:16) [POST]
+  Parameters: {"authenticity_token"=>"x2UmAsn7f6GWCE4+k5Q8w6oMwBXl440O+Mfr8NU0OLc=", "message"=>{"titre"=>"o", "contenu"=>"o", "user_id"=>""}, "commit"=>"Enregistrer"}
+  [4;35;1mSession Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (1.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mReception Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `receptions`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMessage Create (1.0ms)[0m   [0;1mINSERT INTO `messages` (`user_id`, `titre`, `contenu`, `created_at`, `updated_at`) VALUES(1, 'o', 'o', '2010-06-16 09:43:16', '2010-06-16 09:43:16')[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mReception Create (0.0ms)[0m   [0mINSERT INTO `receptions` (`user_id`, `message_id`, `etat`, `created_at`, `updated_at`) VALUES(NULL, NULL, NULL, '2010-06-16 09:43:16', '2010-06-16 09:43:16')[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCOMMIT[0m
+
+TypeError (can't convert Proc into String):
+  app/controllers/messages_controller.rb:34:in `block in create'
+  app/controllers/messages_controller.rb:31:in `create'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (58.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-06-16 11:43:45) [POST]
+  Parameters: {"authenticity_token"=>"x2UmAsn7f6GWCE4+k5Q8w6oMwBXl440O+Mfr8NU0OLc=", "message"=>{"titre"=>"o", "contenu"=>"o", "user_id"=>""}, "commit"=>"Enregistrer"}
+  [4;35;1mSession Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (1.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mReception Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `receptions`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMessage Create (0.0ms)[0m   [0;1mINSERT INTO `messages` (`user_id`, `titre`, `contenu`, `created_at`, `updated_at`) VALUES(1, 'o', 'o', '2010-06-16 09:43:45', '2010-06-16 09:43:45')[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mReception Create (1.0ms)[0m   [0mINSERT INTO `receptions` (`user_id`, `message_id`, `etat`, `created_at`, `updated_at`) VALUES(NULL, NULL, NULL, '2010-06-16 09:43:45', '2010-06-16 09:43:45')[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/messages/2
+Completed in 54ms (DB: 26) | 302 Found [http://localhost/messages]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#show (for 127.0.0.1 at 2010-06-16 11:43:45) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSession Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (0.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSession Update (0.0ms)[0m   [0;1mUPDATE `sessions` SET `path` = '/messages/2', `updated_at` = '2010-06-16 09:43:45' WHERE `id` = 1[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+ActionController::UnknownAction (No action responded to show. Actions: create, ensure_admin, ensure_login, ensure_logout, index, and new):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-16 11:43:52) [GET]
+  [4;36;1mSession Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (0.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSession Update (1.0ms)[0m   [0mUPDATE `sessions` SET `path` = '/messages/', `updated_at` = '2010-06-16 09:43:52' WHERE `id` = 1[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mReception Load (1.0ms)[0m   [0mSELECT * FROM `receptions` [0m
+Rendering messages/index
+  [4;36;1mReception Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `receptions`[0m
+
+ActionView::TemplateError (undefined method `titre' for #<Reception:0x52a6fc0>) on line #18 of app/views/messages/index.html.erb:
+15: 				<td>&nbsp;</td>
+16: 				<td>&nbsp;</td>
+17: 				<td><%=h message.user_id %></td>
+18: 				<td><%=h message.titre %></td>
+19: 				<td><%=h message.created_at  %></td>
+20: 			  </tr>
+21: 			<% end %>
+
+    app/views/messages/index.html.erb:18:in `block in _run_erb_app47views47messages47index46html46erb'
+    app/views/messages/index.html.erb:13:in `each'
+    app/views/messages/index.html.erb:13
+    app/controllers/messages_controller.rb:9:in `index'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (75.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-16 12:07:38) [GET]
+  [4;35;1mSession Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (1.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Reception without an ID):
+  app/controllers/messages_controller.rb:7:in `index'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (67.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-16 12:11:12) [GET]
+  [4;35;1mSession Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (0.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Load (1.0ms)[0m   [0mselect * from messages where id=1[0m
+Rendering messages/index
+  [4;36;1mMessage Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Completed in 735ms (View: 697, DB: 15) | 200 OK [http://localhost/messages/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-16 12:12:47) [GET]
+  [4;35;1mSession Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (1.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+TypeError (can't convert Fixnum into String):
+  app/controllers/messages_controller.rb:7:in `index'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (99.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-16 12:13:45) [GET]
+  [4;35;1mSession Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (1.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/messages_controller.rb:7:in `index'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (52.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-16 12:14:03) [GET]
+  [4;35;1mSession Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (0.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+ArgumentError (wrong number of arguments (3 for 1)):
+  app/controllers/messages_controller.rb:7:in `index'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (87.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-16 12:14:06) [GET]
+  [4;35;1mSession Columns (36.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (0.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+ArgumentError (wrong number of arguments (3 for 1)):
+  app/controllers/messages_controller.rb:7:in `index'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (55.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-16 12:14:22) [GET]
+  [4;35;1mSession Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (0.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 1) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Load (1.0ms)[0m   [0mselect m.* from messages m, receptions r where m.id = r.message_id AND r.user_id = @current_user.id[0m
+Rendering messages/index
+Completed in 31ms (View: 1, DB: 10) | 200 OK [http://localhost/messages/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-16 13:45:35) [GET]
+Rendering template within layouts/default
+Rendering home/index
+Completed in 3140ms (View: 688, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-16 13:45:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/common/backgrounds/white_line.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-16 13:45:40) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-16 13:45:42) [GET]
+
+ActionController::RoutingError (No route matches "/design/logo/favicon.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-16 13:46:05) [GET]
+  [4;36;1mSession Columns (50.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+Rendering sessions/new
+Completed in 215ms (View: 106, DB: 50) | 200 OK [http://localhost/sessions/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-16 13:46:11) [POST]
+  Parameters: {"authenticity_token"=>"qDDkCBN5ByyVuJB2Rz2jwukZM9qGMW2iUExIUF+HLQU=", "session"=>{"name"=>"krystof973@hotmail.com", "password"=>"test"}, "commit"=>"Connexion"}
+  [4;35;1mSession Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (20.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'krystof973@hotmail.com') LIMIT 1[0m
+  [4;35;1mSession Create (1.0ms)[0m   [0mINSERT INTO `sessions` (`user_id`, `ip_address`, `path`, `created_at`, `updated_at`) VALUES(1, NULL, NULL, '2010-06-16 11:46:11', '2010-06-16 11:46:11')[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Redirected to http://localhost:3000/
+Completed in 156ms (DB: 60) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-16 13:46:11) [GET]
+  [4;36;1mSession Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSession Update (0.0ms)[0m   [0mUPDATE `sessions` SET `ip_address` = '127.0.0.1', `path` = '/', `updated_at` = '2010-06-16 11:46:11' WHERE `id` = 2[0m
+  [4;36;1mSQL (29.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/default
+Rendering home/index
+Completed in 63ms (View: 6, DB: 39) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-16 13:48:05) [GET]
+  [4;36;1mSession Columns (30.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/default
+Rendering home/index
+Completed in 886ms (View: 36, DB: 38) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-16 13:48:08) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-16 13:48:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/common/backgrounds/white_line.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-16 13:48:16) [GET]
+  [4;36;1mSession Columns (6.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (0.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSession Update (0.0ms)[0m   [0mUPDATE `sessions` SET `path` = '/messages', `updated_at` = '2010-06-16 11:48:16' WHERE `id` = 2[0m
+  [4;36;1mSQL (8.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Load (2.0ms)[0m   [0mselect m.* from messages m, receptions r where m.id = r.message_id AND r.user_id = @current_user.id[0m
+Rendering messages/index
+Completed in 151ms (View: 58, DB: 24) | 200 OK [http://localhost/messages]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-06-16 13:48:34) [GET]
+  [4;36;1mSession Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (0.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSession Update (0.0ms)[0m   [0mUPDATE `sessions` SET `path` = '/messages/new', `updated_at` = '2010-06-16 11:48:34' WHERE `id` = 2[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+Rendering messages/new
+Completed in 94ms (View: 51, DB: 17) | 200 OK [http://localhost/messages/new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-06-16 13:49:36) [GET]
+  [4;36;1mSession Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (2.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering messages/new
+Completed in 60ms (View: 13, DB: 19) | 200 OK [http://localhost/messages/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-06-16 13:50:05) [GET]
+  [4;35;1mSession Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (1.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+Rendering messages/new
+Completed in 96ms (View: 14, DB: 18) | 200 OK [http://localhost/messages/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-06-16 13:50:19) [POST]
+  Parameters: {"authenticity_token"=>"qDDkCBN5ByyVuJB2Rz2jwukZM9qGMW2iUExIUF+HLQU=", "message"=>{"titre"=>"dzedzd", "contenu"=>"dzdfed", "user_id"=>"2"}, "commit"=>"Enregistrer"}
+  [4;36;1mSession Columns (26.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSession Update (0.0ms)[0m   [0mUPDATE `sessions` SET `path` = '/messages', `updated_at` = '2010-06-16 11:50:19' WHERE `id` = 2[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mReception Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `receptions`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMessage Create (1.0ms)[0m   [0;1mINSERT INTO `messages` (`user_id`, `titre`, `contenu`, `created_at`, `updated_at`) VALUES(1, 'dzedzd', 'dzdfed', '2010-06-16 11:50:19', '2010-06-16 11:50:19')[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mReception Create (0.0ms)[0m   [0mINSERT INTO `receptions` (`user_id`, `message_id`, `etat`, `created_at`, `updated_at`) VALUES(2, NULL, NULL, '2010-06-16 11:50:19', '2010-06-16 11:50:19')[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCOMMIT[0m
+
+ActionController::RoutingError (message_url failed to generate from {:controller=>"messages", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["messages", :id] - are they all satisfied?):
+  (eval):16:in `message_path'
+  app/controllers/messages_controller.rb:34:in `block (2 levels) in create'
+  app/controllers/messages_controller.rb:31:in `create'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-06-16 13:52:43) [POST]
+  Parameters: {"authenticity_token"=>"qDDkCBN5ByyVuJB2Rz2jwukZM9qGMW2iUExIUF+HLQU=", "message"=>{"titre"=>"dzedzd", "contenu"=>"dzdfed", "user_id"=>"2"}, "commit"=>"Enregistrer"}
+  [4;35;1mSession Columns (55.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (2.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mReception Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `receptions`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMessage Create (1.0ms)[0m   [0;1mINSERT INTO `messages` (`user_id`, `titre`, `contenu`, `created_at`, `updated_at`) VALUES(1, 'dzedzd', 'dzdfed', '2010-06-16 11:52:43', '2010-06-16 11:52:43')[0m
+  [4;35;1mSQL (7.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mReception Create (1.0ms)[0m   [0mINSERT INTO `receptions` (`user_id`, `message_id`, `etat`, `created_at`, `updated_at`) VALUES(2, NULL, NULL, '2010-06-16 11:52:43', '2010-06-16 11:52:43')[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCOMMIT[0m
+
+ActionController::RoutingError (message_url failed to generate from {:controller=>"messages", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["messages", :id] - are they all satisfied?):
+  (eval):16:in `message_path'
+  app/controllers/messages_controller.rb:34:in `block (2 levels) in create'
+  app/controllers/messages_controller.rb:31:in `create'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-16 13:53:02) [GET]
+  [4;35;1mSession Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (3.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSession Update (1.0ms)[0m   [0;1mUPDATE `sessions` SET `path` = '/messages/', `updated_at` = '2010-06-16 11:53:02' WHERE `id` = 2[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (13.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Load (1.0ms)[0m   [0;1mselect m.* from messages m, receptions r where m.id = r.message_id AND r.user_id = @current_user.id[0m
+Rendering messages/index
+Completed in 95ms (View: 1, DB: 35) | 200 OK [http://localhost/messages/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-06-16 13:53:07) [GET]
+  [4;35;1mSession Columns (11.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (7.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSession Update (1.0ms)[0m   [0;1mUPDATE `sessions` SET `path` = '/messages/new', `updated_at` = '2010-06-16 11:53:07' WHERE `id` = 2[0m
+  [4;35;1mSQL (52.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering messages/new
+Completed in 129ms (View: 5, DB: 88) | 200 OK [http://localhost/messages/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-06-16 13:53:29) [POST]
+  Parameters: {"authenticity_token"=>"qDDkCBN5ByyVuJB2Rz2jwukZM9qGMW2iUExIUF+HLQU=", "message"=>{"titre"=>"dzedzd", "contenu"=>"kk,k,kl,,", "user_id"=>"2"}, "commit"=>"Enregistrer"}
+  [4;35;1mSession Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (1.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSession Update (1.0ms)[0m   [0;1mUPDATE `sessions` SET `path` = '/messages', `updated_at` = '2010-06-16 11:53:29' WHERE `id` = 2[0m
+  [4;35;1mSQL (66.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Columns (21.0ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mReception Columns (20.0ms)[0m   [0mSHOW FIELDS FROM `receptions`[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMessage Create (1.0ms)[0m   [0mINSERT INTO `messages` (`user_id`, `titre`, `contenu`, `created_at`, `updated_at`) VALUES(1, 'dzedzd', 'kk,k,kl,,', '2010-06-16 11:53:29', '2010-06-16 11:53:29')[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mReception Create (1.0ms)[0m   [0;1mINSERT INTO `receptions` (`user_id`, `message_id`, `etat`, `created_at`, `updated_at`) VALUES(2, NULL, NULL, '2010-06-16 11:53:29', '2010-06-16 11:53:29')[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCOMMIT[0m
+
+ActionController::RoutingError (message_url failed to generate from {:controller=>"messages", :action=>"show"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["messages", :id] - are they all satisfied?):
+  (eval):16:in `message_path'
+  app/controllers/messages_controller.rb:34:in `block (2 levels) in create'
+  app/controllers/messages_controller.rb:31:in `create'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-06-16 13:53:54) [POST]
+  Parameters: {"authenticity_token"=>"qDDkCBN5ByyVuJB2Rz2jwukZM9qGMW2iUExIUF+HLQU=", "message"=>{"titre"=>"dzedzd", "contenu"=>"kk,k,kl,,", "user_id"=>"2"}, "commit"=>"Enregistrer"}
+  [4;36;1mSession Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mReception Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `receptions`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMessage Create (0.0ms)[0m   [0mINSERT INTO `messages` (`user_id`, `titre`, `contenu`, `created_at`, `updated_at`) VALUES(1, 'dzedzd', 'kk,k,kl,,', '2010-06-16 11:53:54', '2010-06-16 11:53:54')[0m
+  [4;36;1mSQL (40.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mReception Create (0.0ms)[0m   [0;1mINSERT INTO `receptions` (`user_id`, `message_id`, `etat`, `created_at`, `updated_at`) VALUES(2, NULL, NULL, '2010-06-16 11:53:54', '2010-06-16 11:53:54')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/messages
+Completed in 99ms (DB: 62) | 302 Found [http://localhost/messages]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-16 13:53:54) [GET]
+  [4;36;1mSession Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Load (1.0ms)[0m   [0;1mselect m.* from messages m, receptions r where m.id = r.message_id AND r.user_id = @current_user.id[0m
+Rendering messages/index
+Completed in 36ms (View: 1, DB: 12) | 200 OK [http://localhost/messages]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-16 13:56:37) [GET]
+  [4;35;1mSession Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (0.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Load (1.0ms)[0m   [0mselect m.* from messages m, receptions r where m.id = r.message_id AND r.user_id = @current_user.id[0m
+Rendering messages/index
+Completed in 40ms (View: 2, DB: 13) | 200 OK [http://localhost/messages]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-06-16 13:56:38) [GET]
+  [4;36;1mSession Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSession Update (1.0ms)[0m   [0mUPDATE `sessions` SET `path` = '/messages/new', `updated_at` = '2010-06-16 11:56:38' WHERE `id` = 2[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Columns (12.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+Rendering messages/new
+Completed in 103ms (View: 16, DB: 36) | 200 OK [http://localhost/messages/new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-06-16 13:56:45) [POST]
+  Parameters: {"authenticity_token"=>"qDDkCBN5ByyVuJB2Rz2jwukZM9qGMW2iUExIUF+HLQU=", "message"=>{"titre"=>"11111", "contenu"=>"111111", "user_id"=>"1"}, "commit"=>"Enregistrer"}
+  [4;36;1mSession Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSession Update (1.0ms)[0m   [0mUPDATE `sessions` SET `path` = '/messages', `updated_at` = '2010-06-16 11:56:45' WHERE `id` = 2[0m
+  [4;36;1mSQL (27.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mReception Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `receptions`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mMessage Create (1.0ms)[0m   [0;1mINSERT INTO `messages` (`user_id`, `titre`, `contenu`, `created_at`, `updated_at`) VALUES(1, '11111', '111111', '2010-06-16 11:56:45', '2010-06-16 11:56:45')[0m
+  [4;35;1mSQL (9.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mReception Create (1.0ms)[0m   [0mINSERT INTO `receptions` (`user_id`, `message_id`, `etat`, `created_at`, `updated_at`) VALUES(1, 7, 1, '2010-06-16 11:56:45', '2010-06-16 11:56:45')[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/messages
+Completed in 141ms (DB: 67) | 302 Found [http://localhost/messages]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-16 13:56:45) [GET]
+  [4;35;1mSession Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (0.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Load (1.0ms)[0m   [0mselect m.* from messages m, receptions r where m.id = r.message_id AND r.user_id = @current_user.id[0m
+Rendering messages/index
+Completed in 41ms (View: 1, DB: 15) | 200 OK [http://localhost/messages]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-16 13:58:34) [GET]
+  [4;36;1mSession Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+TypeError (can't convert Fixnum into String):
+  app/controllers/messages_controller.rb:7:in `index'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (74.0ms)
+Rendered rescues/_request_and_response (24.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-16 13:58:57) [GET]
+  [4;36;1mSession Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (2.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (7.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+TypeError (can't convert Fixnum into String):
+  app/controllers/messages_controller.rb:7:in `index'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (111.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-16 14:06:26) [GET]
+  [4;36;1mSession Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (5.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+TypeError (can't convert Fixnum into String):
+  app/controllers/messages_controller.rb:7:in `index'
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (61.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-16 14:15:06) [GET]
+  [4;36;1mSession Columns (13.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (0.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 2) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (4.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Load (2.0ms)[0m   [0;1mselect m.* from messages m, receptions r where m.id = r.message_id AND r.user_id = 1[0m
+Rendering messages/index
+  [4;35;1mMessage Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+Completed in 1633ms (View: 1550, DB: 29) | 200 OK [http://localhost/messages]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-24 10:23:57) [GET]
+Rendering template within layouts/default
+Rendering home/index
+Completed in 6877ms (View: 471, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 10:25:25) [GET]
+
+ActionController::RoutingError (No route matches "/design/logo/favicon.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 10:39:47) [GET]
+
+ActionController::RoutingError (No route matches "/design/logo/favicon.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 10:39:58) [GET]
+
+ActionController::RoutingError (No route matches "/design/logo/favicon.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 10:42:41) [GET]
+
+ActionController::RoutingError (No route matches "/design/logo/favicon.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 10:43:47) [GET]
+
+ActionController::RoutingError (No route matches "/design/logo/favicon.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-24 10:43:49) [GET]
+Rendering template within layouts/default
+Rendering home/index
+Completed in 376ms (View: 371, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 10:43:56) [GET]
+
+ActionController::RoutingError (No route matches "/layouts/images/design/logo/logo.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 10:43:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/common/backgrounds/white_line.png" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-24 10:44:04) [GET]
+  [4;36;1mSession Columns (61.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+Rendering sessions/new
+Completed in 1728ms (View: 1400, DB: 62) | 200 OK [http://localhost/sessions/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2010-06-24 10:44:11) [POST]
+  Parameters: {"authenticity_token"=>"RMlgK/kG8aPoXznXJyINidOMKx/C78s/payuNuco+M4=", "session"=>{"name"=>"krystof973@hotmail.com", "password"=>"test"}, "commit"=>"Connexion"}
+  [4;35;1mSession Columns (18.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (31.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'krystof973@hotmail.com') LIMIT 1[0m
+  [4;35;1mSession Create (1.0ms)[0m   [0mINSERT INTO `sessions` (`user_id`, `ip_address`, `path`, `created_at`, `updated_at`) VALUES(1, NULL, NULL, '2010-06-24 08:44:12', '2010-06-24 08:44:12')[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Redirected to http://localhost:3000/
+Completed in 505ms (DB: 57) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-06-24 10:44:12) [GET]
+  [4;36;1mSession Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (3.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 3) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSession Update (3.0ms)[0m   [0mUPDATE `sessions` SET `ip_address` = '127.0.0.1', `path` = '/', `updated_at` = '2010-06-24 08:44:12' WHERE `id` = 3[0m
+  [4;36;1mSQL (43.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (9.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/default
+Rendering home/index
+Completed in 145ms (View: 17, DB: 77) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-24 10:53:01) [GET]
+  [4;36;1mSession Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 3) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSession Update (1.0ms)[0m   [0mUPDATE `sessions` SET `path` = '/messages', `updated_at` = '2010-06-24 08:53:01' WHERE `id` = 3[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (4.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Load (85.0ms)[0m   [0mselect m.* from messages m, receptions r where m.id = r.message_id AND r.user_id = 1[0m
+Rendering messages/index
+  [4;36;1mMessage Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Completed in 2229ms (View: 1374, DB: 121) | 200 OK [http://localhost/messages]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-06-24 10:53:19) [GET]
+  [4;35;1mSession Columns (11.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (3.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 3) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSession Update (0.0ms)[0m   [0;1mUPDATE `sessions` SET `path` = '/messages/new', `updated_at` = '2010-06-24 08:53:19' WHERE `id` = 3[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (13.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+Rendering messages/new
+Completed in 181ms (View: 79, DB: 41) | 200 OK [http://localhost/messages/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-06-24 10:53:28) [POST]
+  Parameters: {"authenticity_token"=>"RMlgK/kG8aPoXznXJyINidOMKx/C78s/payuNuco+M4=", "message"=>{"titre"=>"dzfzefdzefeazf", "contenu"=>"fzeqfzeqfezfeqzfqzef", "user_id"=>"1"}, "commit"=>"Enregistrer"}
+  [4;35;1mSession Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (1.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 3) LIMIT 1[0m
+  [4;35;1mSQL (7.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSession Update (1.0ms)[0m   [0;1mUPDATE `sessions` SET `path` = '/messages', `updated_at` = '2010-06-24 08:53:28' WHERE `id` = 3[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mReception Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `receptions`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMessage Create (1.0ms)[0m   [0mINSERT INTO `messages` (`user_id`, `titre`, `contenu`, `created_at`, `updated_at`) VALUES(1, 'dzfzefdzefeazf', 'fzeqfzeqfezfeqzfqzef', '2010-06-24 08:53:28', '2010-06-24 08:53:28')[0m
+  [4;36;1mSQL (36.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mReception Create (1.0ms)[0m   [0;1mINSERT INTO `receptions` (`user_id`, `message_id`, `etat`, `created_at`, `updated_at`) VALUES(1, 8, 1, '2010-06-24 08:53:28', '2010-06-24 08:53:28')[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/messages
+Completed in 241ms (DB: 97) | 302 Found [http://localhost/messages]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-24 10:53:28) [GET]
+  [4;36;1mSession Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 3) LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (6.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Load (1.0ms)[0m   [0;1mselect m.* from messages m, receptions r where m.id = r.message_id AND r.user_id = 1[0m
+Rendering messages/index
+  [4;35;1mMessage Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+Completed in 111ms (View: 9, DB: 44) | 200 OK [http://localhost/messages]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-24 11:10:12) [GET]
+  [4;36;1mSession Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 3) LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (7.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Load (2.0ms)[0m   [0;1mselect m.* from messages m, receptions r where m.id = r.message_id AND r.user_id = 1[0m
+Rendering messages/index
+  [4;35;1mMessage Columns (13.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 191ms (View: 60, DB: 53) | 200 OK [http://localhost/messages]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-24 11:11:23) [GET]
+  [4;36;1mSession Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (4.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 3) LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (7.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (12.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (7.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Load (2.0ms)[0m   [0;1mselect m.* from messages m, receptions r where m.id = r.message_id AND r.user_id = 1[0m
+Rendering messages/index
+  [4;35;1mMessage Columns (12.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 150ms (View: 38, DB: 57) | 200 OK [http://localhost/messages]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-24 11:11:48) [GET]
+  [4;36;1mSession Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (2.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 3) LIMIT 1[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (6.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Load (4.0ms)[0m   [0;1mselect m.* from messages m, receptions r where m.id = r.message_id AND r.user_id = 1[0m
+Rendering messages/index
+  [4;35;1mMessage Columns (11.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+ActionView::TemplateError (undefined method `user_id' for #<User:0x47ab140>) on line #18 of app/views/messages/index.html.erb:
+15: 			  <tr>
+16: 				<td>&nbsp;</td>
+17: 				<td>&nbsp;</td>
+18: 				<td><%=h user.user_id %></td>
+19: 				<td><%=h message.titre %></td>
+20: 				<td><%=h message.created_at  %></td>
+21: 			  </tr>
+
+    app/views/messages/index.html.erb:18:in `block in _run_erb_app47views47messages47index46html46erb'
+    app/views/messages/index.html.erb:13:in `each'
+    app/views/messages/index.html.erb:13
+    app/controllers/messages_controller.rb:10:in `index'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (239.0ms)
+Rendered rescues/_request_and_response (4.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (4.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-24 11:15:39) [GET]
+  [4;35;1mSession Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (1.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 3) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Load (1.0ms)[0m   [0mselect m.* from messages m, receptions r where m.id = r.message_id AND r.user_id = 1[0m
+Rendering messages/index
+  [4;36;1mMessage Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `messages`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+ActionView::TemplateError (wrong number of arguments (3 for 1)) on line #18 of app/views/messages/index.html.erb:
+15: 			  <tr>
+16: 				<td>&nbsp;</td>
+17: 				<td>&nbsp;</td>
+18: 				<td><%=h user.nom , ' ' ,  user.prenom %></td>
+19: 				<td><%=h message.titre %></td>
+20: 				<td><%=h message.created_at  %></td>
+21: 			  </tr>
+
+    app/views/messages/index.html.erb:18:in `block in _run_erb_app47views47messages47index46html46erb'
+    app/views/messages/index.html.erb:13:in `each'
+    app/views/messages/index.html.erb:13
+    app/controllers/messages_controller.rb:10:in `index'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (206.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-24 11:16:03) [GET]
+  [4;36;1mSession Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 3) LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Load (2.0ms)[0m   [0;1mselect m.* from messages m, receptions r where m.id = r.message_id AND r.user_id = 1[0m
+Rendering messages/index
+  [4;35;1mMessage Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 121ms (View: 37, DB: 34) | 200 OK [http://localhost/messages]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-24 11:16:18) [GET]
+  [4;36;1mSession Columns (10.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (2.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 3) LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Load (1.0ms)[0m   [0;1mselect m.* from messages m, receptions r where m.id = r.message_id AND r.user_id = 1[0m
+Rendering messages/index
+  [4;35;1mMessage Columns (10.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+ActionView::TemplateError (wrong number of arguments (2 for 1)) on line #18 of app/views/messages/index.html.erb:
+15: 			  <tr>
+16: 				<td>&nbsp;</td>
+17: 				<td>&nbsp;</td>
+18: 				<td><%=h user.nom , user.prenom %></td>
+19: 				<td><%=h message.titre %></td>
+20: 				<td><%=h message.created_at  %></td>
+21: 			  </tr>
+
+    app/views/messages/index.html.erb:18:in `block in _run_erb_app47views47messages47index46html46erb'
+    app/views/messages/index.html.erb:13:in `each'
+    app/views/messages/index.html.erb:13
+    app/controllers/messages_controller.rb:10:in `index'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (204.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-24 11:16:33) [GET]
+  [4;35;1mSession Columns (11.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (1.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 3) LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Load (2.0ms)[0m   [0mselect m.* from messages m, receptions r where m.id = r.message_id AND r.user_id = 1[0m
+Rendering messages/index
+ERROR: compiling _run_erb_app47views47messages47index46html46erb RAISED C:/Applications/rails/allaiz/app/views/messages/index.html.erb:18: syntax error, unexpected tSTRING_BEG
+...t_buffer.concat((h user.nom . ' ' . user.prenom ).to_s); @ou...
+...                               ^
+Function body:           def _run_erb_app47views47messages47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div class=\"inner-border\">\n\t<h1>Boites de reception</h1>\n\t<div class=\"inner_content\">\n\t\t<table border=\"1\">\n\t\t\t  <tr>\n\t\t\t\t<th>&nbsp;</th>\n\t\t\t\t<th>&nbsp;</th>\n\t\t\t\t<th>Expediteur</th>\n\t\t\t\t<th>Titre</th>\n\t\t\t\t<th>Date</th>\n\t\t\t  </tr>\n\n\t\t\t"
+
+
+
+
+
+
+
+
+
+
+
+;  @messages.each do |message| ; @output_buffer.concat "\n\t\t\t"
+;  user = User.find(message.user_id) ; @output_buffer.concat "\n\t\t\t  <tr>\n\t\t\t\t<td>&nbsp;</td>\n\t\t\t\t<td>&nbsp;</td>\n\t\t\t\t<td>"
+
+
+
+; @output_buffer.concat((h user.nom . ' ' . user.prenom ).to_s); @output_buffer.concat "</td>\n\t\t\t\t<td>"
+; @output_buffer.concat((h message.titre ).to_s); @output_buffer.concat "</td>\n\t\t\t\t<td>"
+; @output_buffer.concat((h message.created_at  ).to_s); @output_buffer.concat "</td>\n\t\t\t  </tr>\n\t\t\t"
+
+;  end ; @output_buffer.concat "\n\t\t\t</table>\n\n\t\t\t<br />\n\n\t\t\t"
+
+
+
+
+; @output_buffer.concat(( link_to 'Ecrire un nouveau message', new_message_path ).to_s); @output_buffer.concat "\n\t\t<div class=\"clear\"></div>\t\t\t\n\t</div>\t\t\t\t    \n</div>"
+
+
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `module_eval'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `compile!'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `block in custom'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `block in respond'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Applications/rails/allaiz/app/controllers/messages_controller.rb:10:in `index'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action_with_flash'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process_with_filters'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `block in call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:8:in `synchronize'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+ActionView::TemplateError (C:/Applications/rails/allaiz/app/views/messages/index.html.erb:18: syntax error, unexpected tSTRING_BEG
+...t_buffer.concat((h user.nom . ' ' . user.prenom ).to_s); @ou...
+...                               ^) on line #18 of app/views/messages/index.html.erb:
+15: 			  <tr>
+16: 				<td>&nbsp;</td>
+17: 				<td>&nbsp;</td>
+18: 				<td><%=h user.nom . ' ' . user.prenom %></td>
+19: 				<td><%=h message.titre %></td>
+20: 				<td><%=h message.created_at  %></td>
+21: 			  </tr>
+
+    app/controllers/messages_controller.rb:10:in `index'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (272.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-24 11:16:43) [GET]
+  [4;36;1mSession Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 3) LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Load (2.0ms)[0m   [0;1mselect m.* from messages m, receptions r where m.id = r.message_id AND r.user_id = 1[0m
+Rendering messages/index
+ERROR: compiling _run_erb_app47views47messages47index46html46erb RAISED C:/Applications/rails/allaiz/app/views/messages/index.html.erb:18: syntax error, unexpected tSTRING_BEG
+...t_buffer.concat((h user.nom . ' ' . user.prenom ).to_s); @ou...
+...                               ^
+Function body:           def _run_erb_app47views47messages47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div class=\"inner-border\">\n\t<h1>Boites de reception</h1>\n\t<div class=\"inner_content\">\n\t\t<table border=\"1\">\n\t\t\t  <tr>\n\t\t\t\t<th>&nbsp;</th>\n\t\t\t\t<th>&nbsp;</th>\n\t\t\t\t<th>Expediteur</th>\n\t\t\t\t<th>Titre</th>\n\t\t\t\t<th>Date</th>\n\t\t\t  </tr>\n\n\t\t\t"
+
+
+
+
+
+
+
+
+
+
+
+;  @messages.each do |message| ; @output_buffer.concat "\n\t\t\t"
+;  user = User.find(message.user_id) ; @output_buffer.concat "\n\t\t\t  <tr>\n\t\t\t\t<td>&nbsp;</td>\n\t\t\t\t<td>&nbsp;</td>\n\t\t\t\t<td>"
+
+
+
+; @output_buffer.concat((h user.nom . ' ' . user.prenom ).to_s); @output_buffer.concat "</td>\n\t\t\t\t<td>"
+; @output_buffer.concat((h message.titre ).to_s); @output_buffer.concat "</td>\n\t\t\t\t<td>"
+; @output_buffer.concat((h message.created_at  ).to_s); @output_buffer.concat "</td>\n\t\t\t  </tr>\n\t\t\t"
+
+;  end ; @output_buffer.concat "\n\t\t\t</table>\n\n\t\t\t<br />\n\n\t\t\t"
+
+
+
+
+; @output_buffer.concat(( link_to 'Ecrire un nouveau message', new_message_path ).to_s); @output_buffer.concat "\n\t\t<div class=\"clear\"></div>\t\t\t\n\t</div>\t\t\t\t    \n</div>"
+
+
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `module_eval'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `compile!'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `block in custom'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `block in respond'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Applications/rails/allaiz/app/controllers/messages_controller.rb:10:in `index'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action_with_flash'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process_with_filters'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `block in call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:8:in `synchronize'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+ActionView::TemplateError (C:/Applications/rails/allaiz/app/views/messages/index.html.erb:18: syntax error, unexpected tSTRING_BEG
+...t_buffer.concat((h user.nom . ' ' . user.prenom ).to_s); @ou...
+...                               ^) on line #18 of app/views/messages/index.html.erb:
+15: 			  <tr>
+16: 				<td>&nbsp;</td>
+17: 				<td>&nbsp;</td>
+18: 				<td><%=h user.nom . ' ' . user.prenom %></td>
+19: 				<td><%=h message.titre %></td>
+20: 				<td><%=h message.created_at  %></td>
+21: 			  </tr>
+
+    app/controllers/messages_controller.rb:10:in `index'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (206.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-24 11:16:51) [GET]
+  [4;35;1mSession Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSession Load (1.0ms)[0m   [0;1mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 3) LIMIT 1[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Columns (9.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (2.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mMessage Load (1.0ms)[0m   [0mselect m.* from messages m, receptions r where m.id = r.message_id AND r.user_id = 1[0m
+Rendering messages/index
+ERROR: compiling _run_erb_app47views47messages47index46html46erb RAISED C:/Applications/rails/allaiz/app/views/messages/index.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+...er.concat((h user.nom ' '  user.prenom ).to_s); @output_buff...
+...                               ^
+Function body:           def _run_erb_app47views47messages47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div class=\"inner-border\">\n\t<h1>Boites de reception</h1>\n\t<div class=\"inner_content\">\n\t\t<table border=\"1\">\n\t\t\t  <tr>\n\t\t\t\t<th>&nbsp;</th>\n\t\t\t\t<th>&nbsp;</th>\n\t\t\t\t<th>Expediteur</th>\n\t\t\t\t<th>Titre</th>\n\t\t\t\t<th>Date</th>\n\t\t\t  </tr>\n\n\t\t\t"
+
+
+
+
+
+
+
+
+
+
+
+;  @messages.each do |message| ; @output_buffer.concat "\n\t\t\t"
+;  user = User.find(message.user_id) ; @output_buffer.concat "\n\t\t\t  <tr>\n\t\t\t\t<td>&nbsp;</td>\n\t\t\t\t<td>&nbsp;</td>\n\t\t\t\t<td>"
+
+
+
+; @output_buffer.concat((h user.nom ' '  user.prenom ).to_s); @output_buffer.concat "</td>\n\t\t\t\t<td>"
+; @output_buffer.concat((h message.titre ).to_s); @output_buffer.concat "</td>\n\t\t\t\t<td>"
+; @output_buffer.concat((h message.created_at  ).to_s); @output_buffer.concat "</td>\n\t\t\t  </tr>\n\t\t\t"
+
+;  end ; @output_buffer.concat "\n\t\t\t</table>\n\n\t\t\t<br />\n\n\t\t\t"
+
+
+
+
+; @output_buffer.concat(( link_to 'Ecrire un nouveau message', new_message_path ).to_s); @output_buffer.concat "\n\t\t<div class=\"clear\"></div>\t\t\t\n\t</div>\t\t\t\t    \n</div>"
+
+
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `module_eval'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `compile!'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `block in custom'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `block in respond'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+C:/Applications/rails/allaiz/app/controllers/messages_controller.rb:10:in `index'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action_with_flash'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process_with_filters'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `block in call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:8:in `synchronize'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+ActionView::TemplateError (C:/Applications/rails/allaiz/app/views/messages/index.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+...er.concat((h user.nom ' '  user.prenom ).to_s); @output_buff...
+...                               ^) on line #18 of app/views/messages/index.html.erb:
+15: 			  <tr>
+16: 				<td>&nbsp;</td>
+17: 				<td>&nbsp;</td>
+18: 				<td><%=h user.nom ' '  user.prenom %></td>
+19: 				<td><%=h message.titre %></td>
+20: 				<td><%=h message.created_at  %></td>
+21: 			  </tr>
+
+    app/controllers/messages_controller.rb:10:in `index'
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (200.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-24 11:17:18) [GET]
+  [4;36;1mSession Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 3) LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Load (1.0ms)[0m   [0;1mselect m.* from messages m, receptions r where m.id = r.message_id AND r.user_id = 1[0m
+Rendering messages/index
+  [4;35;1mMessage Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 122ms (View: 37, DB: 30) | 200 OK [http://localhost/messages]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-06-24 11:17:21) [GET]
+  [4;36;1mSession Columns (8.0ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSession Load (1.0ms)[0m   [0mSELECT * FROM `sessions` WHERE (`sessions`.`id` = 3) LIMIT 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mUser Columns (9.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mMessage Load (1.0ms)[0m   [0;1mselect m.* from messages m, receptions r where m.id = r.message_id AND r.user_id = 1[0m
+Rendering messages/index
+  [4;35;1mMessage Columns (8.0ms)[0m   [0mSHOW FIELDS FROM `messages`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Completed in 99ms (View: 15, DB: 30) | 200 OK [http://localhost/messages]
